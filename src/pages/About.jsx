@@ -1,5 +1,3 @@
-
-
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Users, Award, Globe, Heart, Target, Zap, ChevronLeft, ChevronRight } from 'lucide-react';
