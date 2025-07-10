@@ -1,0 +1,13 @@
+name: Teste de Workflow
+
+on:
+  push:
+    branches:
+      - homologDev
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verificando execução
+        run: echo "✅ Workflow acionado com sucesso!"
