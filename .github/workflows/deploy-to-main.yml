@@ -1,0 +1,40 @@
+name: Build and Deploy to Main
+
+on:
+  push:
+    branches:
+      - homologDev
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Build do projeto
+        run: npm run build
+
+      - name: Deploy dist/ para a branch main
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+          # Clona a branch main separadamente em /tmp
+          git clone --single-branch --branch main https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} deploy-temp
+
+          # Limpa e copia os arquivos da dist
+          rm -rf deploy-temp/*
+          cp -r dist/* deploy-temp/
+
+          cd deploy-temp
+          git add .
+          git commit -m "🚀 Deploy automático da dist/ para main [$(date +'%Y-%m-%d %H:%M:%S')]"
+          git push origin main --force
+
+        env:
+          CI: false
