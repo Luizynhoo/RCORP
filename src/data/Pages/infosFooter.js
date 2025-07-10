@@ -26,8 +26,6 @@ export const infosFooter = {
     { country: 'Francia', phone: '+33 1 23 45 67 89', flag: 'flag-fr' },
     { country: 'Italia', phone: '+39 06 1234 5678', flag: 'flag-it' },
     { country: 'Alemania', phone: '+49 30 12345678', flag: 'flag-de' },
-    { country: 'Alemania', phone: '+49 30 12345678', flag: 'flag-de' },
-    { country: 'Alemania', phone: '+49 30 12345678', flag: 'flag-de' },
   ],
 
   socialLinks: [
