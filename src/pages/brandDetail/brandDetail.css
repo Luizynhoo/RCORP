@@ -1,0 +1,114 @@
+.heroStyle {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.heroImageStyle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heroContentStyle {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroTextStyle {
+    text-align: center;
+    color: white;
+    max-width: 896px;
+    padding: 0 16px;
+}
+
+.containerStyle {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.twoColumnStyle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.twoColumnReverseStyle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.videoContainerStyle {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #f0f0f0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 18px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.destinationGridStyle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.destinationCardStyle {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gradientTextBrand {
+    background: linear-gradient(135deg, var(--color-start), var(--color-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .twoColumnStyle,
+    .twoColumnReverseStyle {
+        padding: 10px;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .heroTextStyle h1 {
+        font-size: 40px;
+    }
+
+  .destinationGridStyle {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .destinationCardStyle {
+    height: auto;
+    max-width: 100%;
+  }
+
+}
