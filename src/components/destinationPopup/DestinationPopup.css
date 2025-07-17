@@ -1,0 +1,135 @@
+.overlayStyle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.contentStyle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  width: 90%;
+  max-height: 90vh;
+  position: relative;
+  align-items: start;
+}
+
+.closeButtonStyle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.titleStyle {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detailItemStyle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.highlightItemStyle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: #4b5563;
+}
+
+.buttonStyle {
+  background: #002d5f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 24px;
+}
+
+
+@media (max-width: 768px) {
+
+  .overlayStyle {
+    align-items: center;
+  }
+
+  .contentStyle {
+    grid-template-columns: 1fr;
+    padding: 24px 16px;
+    max-width: 95%;
+    height: 95vh;
+    overflow-y: auto;
+    align-items: center;
+  }
+
+  .contentStyle img {
+    display: none;
+  }
+
+  .descriptionItem{
+    text-align: center;
+  }
+
+  .titleStyle {
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .detailItemStyle {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .buttonStyle {
+    font-size: 14px;
+    padding: 12px 16px;
+    margin-top: 16px;
+  }
+
+  .highlightItemStyle {
+    font-size: 14px;
+  }
+
+  .closeButtonStyle {
+    top: 12px;
+    right: 12px;
+    font-size: 20px;
+  }
+
+  .overlayStyle {
+    padding: 16px;
+    align-items: flex-start;
+  }
+}
