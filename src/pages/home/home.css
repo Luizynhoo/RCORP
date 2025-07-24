@@ -1,0 +1,13 @@
+@media (min-width: 1024px) {
+  .center-last-item {
+    grid-column: span 3 / span 3;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .center-last-item > * {
+    height: 200px;
+    width: 434px;
+  }
+}
