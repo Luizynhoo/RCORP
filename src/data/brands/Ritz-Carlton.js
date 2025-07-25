@@ -2,7 +2,9 @@ const name = 'The Ritz-Carlton Yacht Collection';
 
 export const RitzCarlton = {
   name: 'The Ritz-Carlton Yacht Collection',
-  description: 'Excelencia en hospitalidad y experiencias de lujo en alta mar',
+  description: 'Con un diseño elegante, servicio personalizado y rutas exclusivas, redefine el concepto de hospitalidad de alto nivel en el mundo náutico.',
+  subtitles: 'Con un diseño elegante, servicio personalizado y rutas exclusivas, redefine el concepto de hospitalidad de alto nivel en el mundo náutico.',
+  subtitleBrands: 'Con un diseño elegante, servicio personalizado y rutas exclusivas, redefine el concepto de hospitalidad de alto nivel en el mundo náutico.',
   fullDescription: 'The Ritz-Carlton Yacht Collection lleva el legado de la marca Ritz-Carlton a los mares, ofreciendo una nueva era de viajes en yates de lujo. Con un diseño elegante, servicio personalizado y rutas exclusivas, redefine el concepto de hospitalidad de alto nivel en el mundo náutico.',
   secondDescription: 'Nuestro equipo especializado trabaja incansablemente para garantizar que cada detalle de su experiencia sea perfecto. Desde la planificación inicial hasta el regreso a casa, estamos aquí para hacer que su viaje sea inolvidable.',
   slug: name.toLowerCase().replace(/\s+/g, '-'),

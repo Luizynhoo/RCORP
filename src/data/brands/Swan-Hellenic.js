@@ -2,7 +2,9 @@ const name = 'Swan Hellenic';
 
 export const SwanHellenic = {
   name: 'Swan Hellenic',
-  description: 'Soluciones completas para viajes de negocios',
+  description: 'Desde la naturaleza salvaje de las regiones polares, hasta los increíbles paisajes de África y América Latina.',
+  subtitles: 'Desde la naturaleza salvaje de las regiones polares, hasta los increíbles paisajes de África y América Latina.',
+  subtitleBrands: 'Desde la naturaleza salvaje de las regiones polares, hasta los increíbles paisajes de África y América Latina.',
   fullDescription: 'Optimice sus viajes de negocios con nuestros servicios especializados. Ofrecemos planificación completa, alojamientos estratégicos, salas de reuniones equipadas y soporte 24/7 para garantizar el éxito de sus actividades empresariales.',
   secondDescription: 'Nuestro equipo especializado trabaja incansablemente para asegurar que cada detalle de su experiencia sea perfecto. Desde la planificación inicial hasta el regreso a casa, estamos aquí para hacer que su viaje sea inolvidable.',
   slug: name.toLowerCase().replace(/\s+/g, '-'),

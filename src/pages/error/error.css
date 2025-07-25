@@ -1,0 +1,17 @@
+.not-found{
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error-title{
+    font-size: 9rem;
+}
+
+.error-link{
+    text-decoration: none;
+    color: #002d5f ;
+}

@@ -2,7 +2,9 @@ const name = 'Scenic';
 
 export const Scenic = {
   name: 'Scenic',
-  description: 'Turismo sostenible y respetuoso con la naturaleza',
+  description: 'Viajes que inspiran sostenibilidad y armonía con la naturaleza',
+  subtitles: 'Viajes que inspiran sostenibilidad y armonía con la naturaleza',
+  subtitleBrands: 'Viajes que inspiran sostenibilidad y armonía con la naturaleza',
   fullDescription: 'Viaje de forma consciente con nuestros tours ecológicos. Nos enfocamos en prácticas sostenibles, conservación ambiental y apoyo a las comunidades locales, proporcionando experiencias únicas en armonía con la naturaleza.',
   secondDescription: 'Nuestro equipo especializado trabaja incansablemente para garantizar que cada detalle de su experiencia sea perfecto. Desde la planificación inicial hasta el regreso a casa, estamos aquí para hacer que su viaje sea inolvidable.',
   slug: name.toLowerCase().replace(/\s+/g, '-'),

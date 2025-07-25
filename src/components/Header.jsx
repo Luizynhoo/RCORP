@@ -59,7 +59,7 @@ const Header = () => {
           </Link>
 
           <nav className="hidden lg:flex items-center space-x-8">
-            <Link to="/sobre" className={linkClasses('/sobre')}>Sobre Nosotros</Link>
+            <Link to="/sobre-nosotros" className={linkClasses('/sobre')}>Sobre Nosotros</Link>
 
             <div
               className="relative"
@@ -67,7 +67,7 @@ const Header = () => {
               onMouseLeave={handleMouseLeave}
             >
               <Link
-                to="/marcas"
+                to="/nuestras-marcas"
                 className={cn(linkClasses('/marcas'), "flex items-center space-x-1")}
               >
                 <span>Nuestras Marcas</span>
@@ -96,7 +96,7 @@ const Header = () => {
                             onMouseLeave={() => setHoveredBrand(false)}
                           >
                             <Link
-                              to={`/marca/${brand.slug}`}
+                              to={`/nuestras-marcas/${brand.slug}`}
                               onClick={() => setIsMegaMenuOpen(false)}
                               className="font-medium text-[#002d5f] mb-2 hover:underline text-sm"
                             >
@@ -136,7 +136,7 @@ const Header = () => {
               </AnimatePresence>
             </div>
 
-            <Link to="/contactos" className={linkClasses('/contactos')}>Contactos</Link>
+            <Link to="/contactenos" className={linkClasses('/contactos')}>Contáctenos</Link>
           </nav>
 
           <button className="lg:hidden p-2 z-80" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -169,25 +169,25 @@ const Header = () => {
             <div className="pt-24 min-h-screen bg-white">
               <nav className="px-8 flex flex-col space-y-8 text-2xl font-medium">
                 <Link
-                  to="/sobre"
+                  to="/sobre-nosotros"
                   className="text-[#002d5f] hover:text-[#0099d8]"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Sobre Nosotros
                 </Link>
                 <Link
-                  to="/marcas"
+                  to="/nuestras-marcas"
                   className="text-[#002d5f] hover:text-[#0099d8]"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Nuestras Marcas
                 </Link>
                 <Link
-                  to="/contactos"
+                  to="/contactenos"
                   className="text-[#002d5f] hover:text-[#0099d8]"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Contactos
+                  Contáctenos
                 </Link>
               </nav>
             </div>

@@ -2,7 +2,9 @@ const name = 'Crystal';
 
 export const Crystal = {
   name: 'Crystal',
-  description: 'Vacaciones perfectas para toda la familia',
+  description: 'Elegancia y confort que navegan por los más inusitados destinos alrededor del mundo. ',
+  subtitles: 'Elegancia y confort que navegan por los más inusitados destinos alrededor del mundo. ',
+  subtitleBrands: 'Elegancia y confort que navegan por los más inusitados destinos alrededor del mundo. ',
   fullDescription: 'Cree recuerdos inolvidables con toda la familia. Nuestros paquetes incluyen actividades para todas las edades, alojamientos familiares cómodos y entretenimiento garantizado para que todos se diviertan.',
   secondDescription: 'Nuestro equipo especializado trabaja incansablemente para garantizar que cada detalle de su experiencia sea perfecto. Desde la planificación inicial hasta el regreso a casa, estamos aquí para hacer que su viaje sea inolvidable.',
   slug: name.toLowerCase().replace(/\s+/g, '-'),

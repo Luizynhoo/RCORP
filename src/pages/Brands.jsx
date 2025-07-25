@@ -61,10 +61,10 @@ const Brands = () => {
                 
                 <div className="p-8 flex flex-col flex-1">
                   <h3 className="text-2xl font-bold mb-4 text-gray-800">{brand.name}</h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed flex-1">{brand.description}</p>
+                  <p className="text-gray-600 mb-6 leading-relaxed flex-1">{brand.subtitles}</p>
                   
                   <Link
-                    to={`/marca/${Object.keys(brandsData)[index]}`}
+                    to={`/nuestras-marcas/${Object.keys(brandsData)[index]}`}
                     className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-medium transition-colors group mt-auto"
                   >
                     <span>Más información</span>

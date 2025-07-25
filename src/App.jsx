@@ -10,6 +10,7 @@ import BrandDetail from '@/pages/brandDetail/BrandDetail';
 import Contactos from './pages/contactos/Contactos';
 import WhatsAppChat from './components/whatsappchat/WhatsAppChat';
 import ScrollToTop from './components/ScrollToTop';
+import Error from './pages/error';
 
 function App() {
   const appStyle = {
@@ -36,10 +37,12 @@ function App() {
         <main style={mainStyle}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/sobre" element={<About />} />
-            <Route path="/marcas" element={<Brands />} />
-            <Route path='/contactos' element={<Contactos/>}/>
-            <Route path="/marca/:brandId" element={<BrandDetail />} />
+            <Route path="/sobre-nosotros" element={<About />} />
+            <Route path="/nuestras-marcas" element={<Brands />} />
+            <Route path='/contactenos' element={<Contactos/>}/>
+            <Route path="/nuestras-marcas/:brandId" element={<BrandDetail />} />
+
+            <Route path='*' element={<Error/>}/>
           </Routes>
         </main>
         <WhatsAppChat/>

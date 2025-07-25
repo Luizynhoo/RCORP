@@ -2,7 +2,9 @@ const name = 'MSC Cruzeiros';
 
 export const MSCCruzeiros = {
   name: 'MSC Cruzeiros',
-  description: 'Experiencias culturales auténticas y enriquecedoras',
+  description: 'Experiencias que se traducen en alegría y diversidad para toda la familia.',
+  subtitles: 'Experiencias que se traducen en alegría y diversidad para toda la familia.',
+  subtitleBrands: 'Experiencias que se traducen en alegría y diversidad para toda la familia.',
   fullDescription: 'Sumérjase en la rica historia y cultura de diferentes civilizaciones. Nuestros recorridos culturales incluyen visitas a museos de renombre, sitios arqueológicos fascinantes y experiencias auténticas con comunidades locales.',
   secondDescription: 'Nuestro equipo especializado trabaja incansablemente para garantizar que cada detalle de su experiencia sea perfecto. Desde la planificación inicial hasta el regreso a casa, estamos aquí para hacer que su viaje sea inolvidable.',
   slug: name.toLowerCase().replace(/\s+/g, '-'),

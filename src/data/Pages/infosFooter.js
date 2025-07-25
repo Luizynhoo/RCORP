@@ -24,7 +24,7 @@ const brandsLogo = [
   { src: '/logo-scenic.png', match: 'Scenic', height: 'h-7' },
   { src: '/logo-swan.png', match: 'Swan', height: 'h-8' },
   { src: '/logo-ritz-carlton.png', match: 'Ritz', height: 'h-16' },
-  
+
 ].map((logo) => {
   const brand = findBrandByPartialName(logo.match);
   return {

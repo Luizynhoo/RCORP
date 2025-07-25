@@ -154,10 +154,11 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              Somos una agencia de viajes premium con más de 15 años de experiencia en crear
-              experiencias únicas e inolvidables. Nuestra pasión es convertir tus sueños de viaje
-              en realidad, ofreciendo servicios personalizados y destinos exclusivos
-              alrededor del mundo.
+              En nuestra agencia, transformamos
+              sueños en experiencias únicas e inolvidables. Con más
+              de una década y media de trayectoria, somos el socio
+              ideal para descubrir destinos exclusivos alrededor del
+              mundo con un servicio totalmente personalizado.
             </motion.p>
           </div>
         </div>
@@ -181,8 +182,10 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Cada marca representa una especialidad única, ofreciendo experiencias
-            personalizadas para diferentes tipos de viajeros.
+            Cada una de nuestras marcas se
+            especializa en un tipo de viaje único, creando
+            experiencias personalizadas para satisfacer a cada
+            viajero
           </motion.p>
 
           {/* IMPORTANTE: Essa lógica depende de lg:grid-cols-3. Se mudar para 4 colunas, ajuste a lógica! */}

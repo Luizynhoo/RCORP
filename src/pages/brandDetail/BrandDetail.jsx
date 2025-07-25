@@ -24,7 +24,7 @@ const BrandDetail = () => {
           <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: '#1f2937', marginBottom: '16px' }}>
             Marca no encontrada
           </h1>
-          <Link to="/marcas" style={{ color: '#2563eb', textDecoration: 'none' }}>
+          <Link to="/nuestras-marcas" style={{ color: '#2563eb', textDecoration: 'none' }}>
             Volver a Marcas
           </Link>
         </div>
@@ -34,7 +34,7 @@ const BrandDetail = () => {
 
   const handleBooking = () => {
     toast({
-      title: "🚧 Esta funcionalidade ainda não foi implementada—mas não se preocupe! Você pode solicitá-la no seu próximo prompt! 🚀"
+      title: "🚧 ¡Esta funcionalidad aún no ha sido implementada!"
     });
   };
 
@@ -124,7 +124,7 @@ const BrandDetail = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              {brand.description}
+              {brand.subtitleBrands}
             </motion.p>
             <motion.div
               style={{ display: 'flex', flexDirection: 'column', gap: '16px', justifyContent: 'center' }}
@@ -146,7 +146,7 @@ const BrandDetail = () => {
                 }}
                 onClick={handleBooking}
               >
-                Reserve Agora
+                Reserve Ahora
               </Button>
             </motion.div>
           </div>
@@ -166,7 +166,7 @@ const BrandDetail = () => {
                 key={`brand-gradient-sobre-${brandId}`}
                 style={gradientTextBrand(brand)}
               >
-                Acerca de {brand.name}
+                Sobre {brand.name}
               </h2>
               <p style={{ fontSize: '18px', color: '#4b5563', lineHeight: '1.625', marginBottom: '24px' }}>
                 {brand.fullDescription}
@@ -233,7 +233,7 @@ const BrandDetail = () => {
                 key={`brand-gradient-experiencias-${brandId}`}
                 style={gradientTextBrand(brand)}
               >
-                 Experiencias Únicas
+                 Experiencias Únicas y Transformadoras
               </h2>
               <p style={{ fontSize: '18px', color: '#4b5563', lineHeight: '1.625', marginBottom: '24px' }}>
                 {brand.exp}
@@ -268,7 +268,7 @@ const BrandDetail = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            Destinos Populares
+            Destinos Más Solicitados
           </motion.h2>
 
           <div className='destinationGridStyle'>
@@ -327,7 +327,7 @@ const BrandDetail = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              ¿Listo para tu aventura?
+              ¿Preparado para su próxima aventura?
             </motion.h2>
             <motion.p
               style={{ fontSize: '18px', marginBottom: '48px', color: 'rgba(255,255,255,0.9)' }}
@@ -336,7 +336,7 @@ const BrandDetail = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-               Ponte en contacto con nosotros y empieza a planear tu próxima experiencia inolvidable.
+                Dé el primer paso hacia una experiencia inolvidable
             </motion.p>
             <motion.div
               style={{ display: 'flex', flexDirection: 'column', gap: '16px', justifyContent: 'center', alignItems: 'center' }}
@@ -365,6 +365,7 @@ const BrandDetail = () => {
                 <Calendar style={{ width: '20px', height: '20px' }} />
                 Reserva Ahora
               </Button>
+            <Link to="/contactenos" style={{ textDecoration: 'none' }}>  
               <Button
                 size="lg"
                 style={{
@@ -380,11 +381,11 @@ const BrandDetail = () => {
                   alignItems: 'center',
                   gap: '8px'
                 }}
-                onClick={handleBooking}
               >
                 <Users style={{ width: '20px', height: '20px' }} />
-                 Habla con Nosotros
+                 Contáctenos
               </Button>
+            </Link>  
             </motion.div>
           </div>
         </div>

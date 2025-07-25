@@ -53,11 +53,11 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              Navegación
+              Informaciones Generales
             </motion.span>
             <div>
               <Link
-                to="/sobre"
+                to="/sobre-nosotros"
                 className='linkStyle'
                 onMouseEnter={(e) => e.target.style.color = 'white'}
                 onMouseLeave={(e) => e.target.style.color = '#d1d5db'}
@@ -65,7 +65,7 @@ const Footer = () => {
                 Sobre nosotros
               </Link>
               <Link
-                to="/marcas"
+                to="/nuestras-marcas"
                 className='linkStyle'
                 onMouseEnter={(e) => e.target.style.color = 'white'}
                 onMouseLeave={(e) => e.target.style.color = '#d1d5db'}
@@ -73,12 +73,12 @@ const Footer = () => {
                 Nuestras Marcas
               </Link>
               <Link
-                to="/contactos"
+                to="/contactenos"
                 className='linkStyle'
                 onMouseEnter={(e) => e.target.style.color = 'white'}
                 onMouseLeave={(e) => e.target.style.color = '#d1d5db'}
               >
-                Contactos
+                Contáctenos
               </Link>
             </div>
           </div>
@@ -121,7 +121,7 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              Conéctate, conoce
+              Conózcanos mejor
             </motion.span>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
@@ -167,7 +167,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/*Logos do footer*/}
 
         <motion.div
           className="grid grid-cols-2 md:grid-cols-3 gap-6 place-items-center py-8"
@@ -197,7 +196,6 @@ const Footer = () => {
         </motion.div>
 
 
-        {/*Logos do footer*/}
 
         <motion.div
           className='copyrightStyle'
