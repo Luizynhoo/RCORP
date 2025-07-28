@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa'
 import { brandsData } from '../brandsData';
 
 const brandsLinks = Object.entries(brandsData).map(([slug, brand]) => ({
-  href: `/marca/${slug}`,
+  href: `/nuestras-marcas/${slug}`,
   label: brand.name
 })).sort((a, b) => a.label.localeCompare(b.label));
 
@@ -29,7 +29,7 @@ const brandsLogo = [
   const brand = findBrandByPartialName(logo.match);
   return {
     ...logo,
-    href: brand ? `/marca/${brand.slug}` : '#',
+    href: brand ? `/nuestras-marcas/${brand.slug}` : '#',
     alt: brand ? brand.name : 'Marca'
   };
 });
