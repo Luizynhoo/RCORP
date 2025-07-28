@@ -204,7 +204,7 @@ const Home = () => {
                   viewport={{ once: true }}
                   className={shouldCenterLastItem ? 'center-last-item' : ''}
                 >
-                  <Link to={`/marca/${brand.id}`} className="block">
+                  <Link to={`/nuestras-marcas/${brand.id}`} className="block">
                     <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col items-center justify-center text-center h-[200px]">
                       <div className="mb-4">
                         <img
