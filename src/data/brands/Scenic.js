@@ -14,6 +14,7 @@ export const Scenic = {
   Image: '/Header/scenic-header.webp',
   logoRGB: '/RGB/logo-scenic-rgb.png',
   logoHeight: 'h-[35px]',
+  expTitle:'Experiencias que Transforman',
   exp: 'Vamos más allá de un simple viaje. Creamos experiencias transformadoras que lo conectan profundamente con culturas, paisajes y aventuras que recordará toda la vida.',
   videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
   videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',

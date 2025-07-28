@@ -14,6 +14,7 @@ export const MSCCruzeiros = {
   Image: '/Header/msc-header.webp',
   logoRGB: '/RGB/logo-msc-rgb.png',
   logoHeight: 'h-[50px]',
+  expTitle:'Experiencias Inigualables',
   exp: 'Ofrecemos mucho más que simples trayectos; creamos experiencias transformadoras que lo conectan profundamente con culturas milenarias, paisajes sublimes y aventuras inolvidables que perdurarán en su memoria para siempre.',
   videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
   videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',

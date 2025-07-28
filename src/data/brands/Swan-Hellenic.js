@@ -14,6 +14,7 @@ export const SwanHellenic = {
   Image: '/Header/swan-header.webp',
   logoRGB: '/RGB/logo-swan-rgb.png',
   logoHeight: 'h-[45px]',
+  expTitle:'Experiencias que Transforman',
   exp: 'Creamos experiencias transformadoras que lo conectan profundamente con culturas, paisajes y aventuras que recordará por siempre.',
   videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
   videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',

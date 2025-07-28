@@ -14,6 +14,7 @@ export const CelebrityCruises = {
   Image: '/Header/celebrity-header.webp',
   logoRGB: '/RGB/logo-celebrity-rgb.png',
   logoHeight: 'h-[40px]',
+  expTitle:'Experiencias Únicas',
   exp: 'Más que simples viajes, creamos experiencias transformadoras. Lo conectamos con culturas vibrantes, paisajes asombrosos y aventuras que permanecerán en su alma para siempre.',
   videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
   videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',

@@ -233,7 +233,7 @@ const BrandDetail = () => {
                 key={`brand-gradient-experiencias-${brandId}`}
                 style={gradientTextBrand(brand)}
               >
-                 Experiencias Únicas y Transformadoras
+                 {brand.expTitle}
               </h2>
               <p style={{ fontSize: '18px', color: '#4b5563', lineHeight: '1.625', marginBottom: '24px' }}>
                 {brand.exp}

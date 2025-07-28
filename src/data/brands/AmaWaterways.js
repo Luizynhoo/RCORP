@@ -14,6 +14,7 @@ export const AmaWaterways = {
   Image: '/Header/amawaterways-header.webp',
   logoRGB: '/RGB/logo-amawaterways-rgb.png',
   logoHeight: 'h-[30px]',
+  expTitle:'Experiencias Únicas y Transformadoras',
   exp: 'Ofrecemos mucho más que viajes; creamos experiencias transformadoras que lo conectarán con culturas fascinantes, paisajes asombrosos y aventuras inolvidables que permanecerán en su memoria para siempre.',
   videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
   videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',

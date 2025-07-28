@@ -14,6 +14,7 @@ export const Crystal = {
   Image: '/Header/crystal-header.webp',
   logoRGB: '/RGB/logo-crystal-rgb.png',
   logoHeight: 'h-[30px]',
+  expTitle:'Experiencias Inigualables',
   exp: 'Ofrecemos mucho más que viajes comunes. Conectamos a nuestros viajeros con culturas auténticas, paisajes sublimes y aventuras memorables.',
   videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
   videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',
