@@ -8,6 +8,14 @@ import './DestinationPopup.css'
 const DestinationPopup = ({ destination, onClose }) => {
   if (!destination) return null;
 
+    const handleWhatsApp = () =>{
+    const phone = "5511950842678";
+    const message = "Olá, gostaria de solicitar um orçamento";
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+  }
+
   return (
     <div className='overlayStyle' onClick={onClose}>
       <motion.div
@@ -27,7 +35,6 @@ const DestinationPopup = ({ destination, onClose }) => {
           <X size={24} />
         </button>
 
-        {/* Coluna 1: Imagem */}
         <div>
           <img
             src={destination.DestinoImg}
@@ -41,7 +48,6 @@ const DestinationPopup = ({ destination, onClose }) => {
           />
         </div>
 
-        {/* Coluna 2: Nome + descrição + detalhes */}
         <div style={{ overflowY: 'auto', height:['100%'] }}>
           <h2 className='titleStyle'>
             <MapPin size={24} color="#2563eb" />
@@ -79,7 +85,6 @@ const DestinationPopup = ({ destination, onClose }) => {
           </div>
         </div>
 
-        {/* Coluna 3: Destaques + botão */}
         <div  style={{ display: 'flex', flexDirection:'column', height:['97%'] , justifyContent: 'space-between' }}>
           <h2 className='titleStyle'>
             <FaStar size={16} color="#fbbf24" />
@@ -98,7 +103,7 @@ const DestinationPopup = ({ destination, onClose }) => {
             className='buttonStyle'
             onMouseEnter={(e) => e.target.style.transform = 'scale(1.02)'}
             onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
-            onClick={onClose}
+            onClick={handleWhatsApp}
           >
             Solicitar Orçamento
           </button>

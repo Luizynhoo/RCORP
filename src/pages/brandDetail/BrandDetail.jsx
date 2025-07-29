@@ -32,11 +32,19 @@ const BrandDetail = () => {
     );
   }
 
-  const handleBooking = () => {
-    toast({
-      title: "🚧 ¡Esta funcionalidad aún no ha sido implementada!"
-    });
-  };
+  const handleWhatsApp = () =>{
+    const phone = "5511950842678";
+    const message = "Olá, gostaria de mais informações";
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+  }
+
+  // const handleBooking = () => {
+  //   toast({
+  //     title: "🚧 ¡Esta funcionalidad aún no ha sido implementada!"
+  //   });
+  // };
 
   const handleDestinationClick = (destination) => {
     setSelectedDestination(destination);
@@ -144,7 +152,7 @@ const BrandDetail = () => {
                   cursor: 'pointer',
                   fontWeight: 600
                 }}
-                onClick={handleBooking}
+                onClick={handleWhatsApp}
               >
                 Reserve Ahora
               </Button>
@@ -360,7 +368,7 @@ const BrandDetail = () => {
                   alignItems: 'center',
                   gap: '8px'
                 }}
-                onClick={handleBooking}
+                onClick={handleWhatsApp}
               >
                 <Calendar style={{ width: '20px', height: '20px' }} />
                 Reserva Ahora

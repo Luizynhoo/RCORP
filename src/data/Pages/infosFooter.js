@@ -71,7 +71,7 @@ export const infosFooter = {
     },
     {
       icon: FaWhatsapp,
-      href: 'https://api.whatsapp.com/send/?phone=5511950842678&text&type=phone_number&app_absent=0',
+      href: 'https://wa.me/5511950842678?text=Olá,%20gostaria%20de%20mais%20informações',
       label: 'WhatsApp',
       color: '#25D366'
     }
