@@ -6,16 +6,16 @@ import { brandsData } from '/src/data/brandsData.js';
 
 export default function Contactos() {
     const { toast } = useToast();
-     const brands = Object.values(brandsData);
+    const brands = Object.values(brandsData);
 
     const [form, setForm] = useState({
-        nome: '',
-        email: '',
+        nombre: '',
+        correo: '',
         agencia: '',
-        telefone: '',
-        duvida: '',
-        companhia: '',
-        mensagem: '',
+        telefono: '',
+        duda: '',
+        compania: '',
+        mensaje: '',
     });
 
     const handleChange = (e) => {
@@ -23,7 +23,7 @@ export default function Contactos() {
 
         const { name, value } = e.target;
 
-        if (name === 'telefone') {
+        if (name === 'telefono') {
             const onlyNums = value.replace(/\D/g, '');
             setForm({ ...form, [name]: onlyNums });
         } else {
@@ -43,30 +43,29 @@ export default function Contactos() {
             )
             .then(() => {
                 toast({
-                    title: 'Mensagem enviada!',
-                    description: 'Entraremos em contato em breve',
+                    title: '¡Mensaje enviado!',
+                    description: 'Nos pondremos en contacto pronto',
                     variant: 'success',
                 });
 
                 setForm({
-                    nome: '',
-                    email: '',
+                    nombre: '',
+                    correo: '',
                     agencia: '',
-                    telefone: '',
-                    duvida: '',
-                    companhia: '',
-                    mensagem: '',
+                    telefono: '',
+                    duda: '',
+                    compania: '',
+                    mensaje: '',
                 });
             })
             .catch((error) => {
-                console.error('Erro ao enviar o e-mail', error);
+                console.error('Error al enviar el correo', error);
                 toast({
-                    title: 'Erro ao enviar',
-                    description: 'Tente novamente mais tarde.',
+                    title: 'Error al enviar',
+                    description: 'Inténtelo de nuevo más tarde.',
                     variant: 'destructive',
                 });
             })
-
     };
 
     return (
@@ -83,10 +82,10 @@ export default function Contactos() {
 
                 <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {[
-                        { label: 'Nombre*', name: 'nome', required: true },
-                        { label: 'Correo Electrónico*', name: 'email', type: 'email', required: true },
+                        { label: 'Nombre*', name: 'nombre', required: true },
+                        { label: 'Correo Electrónico*', name: 'correo', type: 'email', required: true },
                         { label: 'Nombre de la Agencia', name: 'agencia' },
-                        { label: 'Teléfono de contacto', name: 'telefone', type:'tel', required: true },
+                        { label: 'Teléfono de contacto', name: 'telefono', type:'tel', required: true },
                     ].map(({ label, name, type = 'text', required }) => (
                         <motion.label
                             key={name}
@@ -115,19 +114,19 @@ export default function Contactos() {
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
                     >
-                        ¿De qué se trata la duda?
+                        ¿Cuál es su duda?
                         <select
-                            name="duvida"
+                            name="duda"
                             required
-                            value={form.duvida}
+                            value={form.duda}
                             onChange={handleChange}
                             className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0099D8]"
                         >
-                            <option value="">Selecione</option>
-                            <option value="cotacao">Cotação</option>
-                            <option value="ja-reservou">Já reservou</option>
-                            <option value="pos-cruzeiro">Pós-cruzeiro</option>
-                            <option value="financeiro">Departamento financeiro</option>
+                            <option value="">Seleccione</option>
+                            <option value="cotizacion">Cotización</option>
+                            <option value="ya-reservo">Ya reservó</option>
+                            <option value="post-crucero">Post-crucero</option>
+                            <option value="finanzas">Departamento de finanzas</option>
                             <option value="comercial">Departamento comercial</option>
                         </select>
                     </motion.label>
@@ -142,12 +141,12 @@ export default function Contactos() {
                         Compañía de interés
                         <select
                             required
-                            name="companhia"
-                            value={form.companhia}
+                            name="compania"
+                            value={form.compania}
                             onChange={handleChange}
                             className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0099D8]"
                         >
-                            <option value="">Selecione</option>
+                            <option value="">Seleccione</option>
                             {brands.map((brand) => (
                                 <option key={brand.name} value={brand.name}>
                                     {brand.name}
@@ -165,10 +164,10 @@ export default function Contactos() {
                     >
                         Escriba su solicitud
                         <textarea
-                            name="mensagem"
+                            name="mensaje"
                             rows="5"
                             required
-                            value={form.mensagem}
+                            value={form.mensaje}
                             onChange={handleChange}
                             className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 resize-none focus:ring-[#0099D8]"
                         />

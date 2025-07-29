@@ -1,7 +1,7 @@
 const name = 'AmaWaterways';
 
 export const AmaWaterways = {
-  name: 'AmaWaterways',
+  name: 'AmaWaterways®',
   description: 'Viajes de lujo y destinos exclusivos definen el concepto de esta marca. ',
   subtitles:'Viajes que desbordan lujo y comodidad por los más hermosos rios del mundo.',
   subtitleBrands:'Adentrese en culturas exclusivas y el lujo más exquisito en una experiencia única diseñada para aquellos que buscan lo extraordinario.',

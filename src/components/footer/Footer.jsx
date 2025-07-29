@@ -24,7 +24,7 @@ const Footer = () => {
                   key={brand.label}
                   href={brand.href}
                   style={{
-                    fontSize: '14px',
+                    fontSize: '16px',
                     color: '#D1D5DB',
                     cursor: 'pointer',
                     marginBottom: '8px',
@@ -128,7 +128,7 @@ const Footer = () => {
               <FaEnvelope style={{ width: '20px', height: '20px', color: '#60a5fa' }} />
               <div>
                 <div style={{ color: '#d1d5db' }}>Correo Electrónico</div>
-                <div style={{ color: '#9ca3af' }}>contacto@Rcorp.com</div>
+                <div style={{ color: '#9ca3af' }}>contacto@rcorp.com</div>
               </div>
             </div>
 

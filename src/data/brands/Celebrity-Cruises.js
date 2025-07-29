@@ -1,7 +1,7 @@
 const name = 'Celebrity Cruises';
 
 export const CelebrityCruises = {
-  name: 'Celebrity Cruises',
+  name: 'Celebrity Cruises®',
   description: 'Emoción y aventura para los amantes de desafíos. ',
   subtitles: 'Emoción y aventura para los amantes de desafíos. ',
   subtitleBrands: 'Pasión y audacia para los que aceptan cualquier desafío',
