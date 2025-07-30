@@ -74,11 +74,17 @@ const Home = () => {
             exit={{ opacity: 0, scale: 1.05 }}
             transition={{ duration: 1.0, ease: "easeInOut" }}
           >
-            <img
-              src={banners[currentSlide].imageURL}
-              alt={banners[currentSlide].title}
-              className="w-full h-full object-cover"
-            />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcSet={banners[currentSlide].mobileImageURL}
+              />
+              <img
+                src={banners[currentSlide].imageURL}
+                alt={banners[currentSlide].title}
+                className="w-full h-full object-cover"
+              />
+            </picture>
             <div className="absolute inset-0 bg-black/30" />
           </motion.div>
         </AnimatePresence>
@@ -99,13 +105,14 @@ const Home = () => {
               <p className="text-xl md:text-2xl mb-8 text-gray-200">
                 {banners[currentSlide].subtitle}
               </p>
-              <Button
-                size="lg"
-                className="bg-[#002D5F] hover:bg-[#033972] text-white px-8 py-4 text-lg rounded-full shadow-glow"
-                onClick={handleCTA}
-              >
-                Explorar Ahora
-              </Button>
+              <Link to={banners[currentSlide].link}>
+                <Button
+                  size="lg"
+                  className="bg-[#002D5F] hover:bg-[#033972] text-white px-8 py-4 text-lg rounded-full shadow-glow"
+                >
+                  Explorar Ahora
+                </Button>
+              </Link>
             </motion.div>
           </AnimatePresence>
         </div>

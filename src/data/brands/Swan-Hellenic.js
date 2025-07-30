@@ -14,7 +14,7 @@ export const SwanHellenic = {
   Image: '/Header/swan-header.webp',
   logoRGB: '/RGB/logo-swan-rgb.png',
   logoHeight: 'h-[45px]',
-  expTitle:'Experiencias que Transforman',
+  expTitle: 'Experiencias que Transforman',
   exp: 'Creamos experiencias transformadoras que lo conectan profundamente con culturas, paisajes y aventuras que recordará por siempre.',
   videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
   videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',
@@ -26,105 +26,105 @@ export const SwanHellenic = {
   ],
   destinations: [
     {
-      name: 'São Paulo',
-      image: 'Centro financiero de São Paulo con rascacielos',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'El epicentro financiero que impulsa América Latina.',
-      description: 'São Paulo es el principal hub de negocios de América Latina. Ofrecemos servicios completos para viajes corporativos en la mayor metrópolis brasileña.',
-      bestTime: 'Todo el año',
-      duration: '2-5 días',
-      rating: '4.7',
+      name: 'Ártico y Antártida',
+      image: 'Paisajes helados y glaciares espectaculares en polos remotos',
+      DestinoImg: '../Destinations/Antarctic.webp',
+      shortDescription: 'Exploración polar en lugares vírgenes como Groenlandia y Fiordos noruegos.',
+      description: 'Experimente expediciones culturales al Ártico y la Antártida a bordo de los yates boutique SH Vega y SH Diana. Navegue por Svalbard, Groenlandia y Tierra de Fuego, con excursiones en zodiac, avistamiento de fauna y escenarios helados únicos.',
+      bestTime: 'Jun - Sep (Ártico), Nov - Mar (Antártida)',
+      duration: '9‑20 noches',
+      rating: '5.0',
       highlights: [
-        'Hoteles ejecutivos en el centro financiero',
-        'Salas de reuniones equipadas',
-        'Transporte ejecutivo',
-        'Networking en eventos corporativos',
-        'Soporte logístico completo'
+        'Glaciares imponentes y icebergs gigantes',
+        'Observación de ballenas, focas y pingüinos',
+        'Excursiones en zodiac y kayak polar',
+        'Ponentes expertos en historia y ciencias',
+        'Conciencia ambiental y safaris en condiciones extremas'
       ]
     },
     {
-      name: 'Nueva York',
-      image: 'Distrito financiero de Manhattan',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Donde los negocios del mundo convergen.',
-      description: 'Nueva York es el centro financiero mundial. Ofrecemos servicios premium para ejecutivos que buscan eficiencia y productividad en sus viajes de negocios.',
-      bestTime: 'Todo el año',
-      duration: '3-7 días',
-      rating: '4.8',
-      highlights: [
-        'Hoteles en Manhattan',
-        'Acceso a Wall Street',
-        'Salas de reuniones premium',
-        'Transporte ejecutivo',
-        'Networking internacional'
-      ]
-    },
-    {
-      name: 'Londres',
-      image: 'Distrito financiero de Londres con arquitectura moderna',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Hub financiero europeo.',
-      description: 'Londres es el principal centro financiero de Europa. Ofrecemos servicios especializados para ejecutivos que hacen negocios en la capital británica.',
-      bestTime: 'Todo el año',
-      duration: '2-6 días',
-      rating: '4.8',
-      highlights: [
-        'Hoteles en la City de Londres',
-        'Acceso al distrito financiero',
-        'Salas de conferencias modernas',
-        'Transporte ejecutivo',
-        'Eventos de networking'
-      ]
-    },
-    {
-      name: 'Singapur',
-      image: 'Marina Bay Sands en Singapur',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Tu acceso directo al corazón de Asia.',
-      description: 'Singapur es el principal hub de negocios de Asia. Ofrecemos servicios completos para ejecutivos que hacen negocios en el continente asiático.',
-      bestTime: 'Todo el año',
-      duration: '3-7 días',
+      name: 'Islas remotas del Pacífico y Atlántico',
+      image: 'Arquipélagos aislados e exóticos cercanos ao Pacífico Sul e Atlântico',
+      DestinoImg: 'https://images.unsplash.com/photo-1581846891925-7fc1e0f1dc98',
+      shortDescription: 'Islas aisladas y poco visitadas en rutas boutique oceánicas.',
+      description: 'Cruceros exclusivos hacia islas remotas en el Pacífico Sur y el Atlántico, como el archipiélago de Seychelles, Guyana y atolones poco explorados, en itinerarios centrados en la cultura local y la naturaleza.',
+      bestTime: 'Oct - Mar',
+      duration: '10‑17 noches',
       rating: '4.9',
       highlights: [
-        'Hoteles en el distrito financiero',
-        'Facilidades para negocios',
-        'Conectividad asiática',
-        'Infraestructura moderna',
-        'Eficiencia logística'
+        'Atolones vírgenes y biodiversidad intacta',
+        'Comunidades locales y experiencias auténticas',
+        'Fauna marina exótica y snorkel cultural',
+        'Paseos en parajes preservados',
+        'Ambiente íntimo y exclusivo'
       ]
     },
     {
-      name: 'Frankfurt',
-      image: 'Panorama del distrito financiero de Frankfurt',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'El corazón financiero de Alemania.',
-      description: 'Frankfurt es el corazón financiero de Alemania y un importante hub europeo. Ofrecemos servicios especializados para viajes corporativos eficientes.',
-      bestTime: 'Todo el año',
-      duration: '2-5 días',
-      rating: '4.7',
-      highlights: [
-        'Cercanía al distrito bancario',
-        'Infraestructura para negocios',
-        'Conectividad europea',
-        'Eficiencia alemana',
-        'Facilidades corporativas'
-      ]
-    },
-    {
-      name: 'Dubái',
-      image: 'Centro de negocios moderno en Dubái',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Hub de negócios del Medio Oriente.',
-      description: 'Dubái es el principal centro de negocios del Medio Oriente. Ofrecemos servicios premium para ejecutivos que hacen negocios en la región.',
-      bestTime: 'Nov - Mar',
-      duration: '3-6 días',
+      name: 'Asia Central y Océano Índico',
+      image: 'Puertos exóticos en Sri Lanka, Maldivas y Omán',
+      DestinoImg: 'https://images.unsplash.com/photo-1581846891925-7fc1e0f1dc98',
+      shortDescription: 'Itinerarios por puertos de cultura milenaria e islas exóticas.',
+      description: 'Explore puertos legendarios como Sri Lanka, Omán, Maldivas e incluso aldeas del río Amazonas y Guyana en viajes diseñados por Swan Hellenic, combinando patrimonio cultural y naturaleza exuberante.',
+      bestTime: 'Nov - Feb',
+      duration: '12‑17 noches',
       rating: '4.8',
       highlights: [
-        'Hoteles de negocios de lujo',
-        'Facilidades corporativas',
-        'Conectividad global',
-        'Zona franca de negocios',
-        'Networking internacional'
+        'Sri Lanka cultural y playas tranquilas',
+        'Islas Maldivas intactas y hoteles boutique',
+        'Historia antigua en Omán y la costa árabe',
+        'Exploración en ríos tropicales y ecología regional',
+        'Experiencias con guías expertos locales'
+      ]
+    },
+    {
+      name: 'Mediterráneo y Mar Negro',
+      image: 'Sitios arqueológicos y puertos históricos del Mediterráneo',
+      DestinoImg: 'https://images.unsplash.com/photo-1581609881314-e870aa3b590e',
+      shortDescription: 'Cruceros culturales visitando las raíces de civilizaciones antiguas.',
+      description: 'Descubra Grecia, Turquía, Croacia y los enclaves históricos del Mar Negro, con paradas en sitios arqueológicos como Efeso, Troya y antiguos puertos bizantinos en itinerarios llenos de historia y paisajes costeros.',
+      bestTime: 'Abr - Oct',
+      duration: '7‑14 noches',
+      rating: '4.7',
+      highlights: [
+        'Excursiones en yacimientos arqueológicos clásicos',
+        'Ciudades costeras como Estambul, Dubrovnik y Atenas',
+        'Historia viva en poblados ancestrales',
+        'Cultura mediterránea y gastronomía local',
+        'Grupos reducidos y experiencias privadas'
+      ]
+    },
+    {
+      name: 'Costa africana e islas atlánticas',
+      image: 'Paisajes desérticos y costa de Namibia',
+      DestinoImg: 'https://images.unsplash.com/photo-1600172455255-bf87018d66f0',
+      shortDescription: 'Rutas por zonas costeras poco exploradas e islas desérticas.',
+      description: 'Exploraciones por la costa de África y las islas atlánticas como Namibia, con itinerarios que combinan escenarios naturales impresionantes, patrimonio cultural y experiencias exclusivas fuera de ruta.',
+      bestTime: 'May - Sep',
+      duration: '7‑14 noches',
+      rating: '4.8',
+      highlights: [
+        'Paisajes desérticos y fauna costera africana',
+        'Comunidades culturales poco visitadas',
+        'Tours naturales fuera del turismo masivo',
+        'Fotografía de paisajes únicos',
+        'Guías expertos en ecoturismo y conservación'
+      ]
+    },
+    {
+      name: 'Grand Voyages / Expediciones transcontinentales',
+      image: 'Mapa de rutas globales hacia continentes remotos',
+      DestinoImg: 'https://images.unsplash.com/photo-1593629415500-8cdc5f575cd6',
+      shortDescription: 'Itinerarios épicos a escala global explorando regiones remotas.',
+      description: 'Grand Voyages de Swan Hellenic conectan destinos como Sudamérica, África, el Ártico y Asia en viajes de hasta 20 noches a bordo de SH Vega o SH Diana. Perfecto para exploradores interesados en cultura, naturaleza y viajes excepcionales.',
+      bestTime: 'Todo el año según región',
+      duration: '15‑20 noches',
+      rating: '5.0',
+      highlights: [
+        'Rutas desde Ushuaia o Ciudad del Cabo hasta alta latitud',
+        'Experiencias inmersivas en destinos remotos',
+        'A bordo incluyen laboratorio científico y charlas culturales',
+        'Ambiente boutique y sostenible',
+        'Combinación de naturaleza, historia y exploraciones científicas'
       ]
     }
   ],

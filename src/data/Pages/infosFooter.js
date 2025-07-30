@@ -41,24 +41,22 @@ export const infosFooter = {
   brands: brandsLinks,
 
   contacts: [
-    { country: 'Brasil', phone: '+55 11 95084-2678', flag: 'flag-br' },
-    // { country: 'Estados Unidos', phone: '+1 555 123-4567', flag: 'flag-us' },
-    // { country: 'España', phone: '+34 912 345 678', flag: 'flag-es' },
+    { phone: '+55 11 95084-2678' },
   ],
 
   socialLinks: [
-    {
-      icon: FaFacebookF,
-      href: 'https://www.facebook.com/RCorpTravel',
-      label: 'Facebook',
-      color: '#1877F2'
-    },
     {
       icon: FaInstagram,
       href: 'https://www.instagram.com/rcorptraveloficial/',
       label: 'Instagram',
       gradient:
         'radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%)'
+    },
+    {
+      icon: FaFacebookF,
+      href: 'https://www.facebook.com/RCorpTravel',
+      label: 'Facebook',
+      color: '#1877F2'
     },
     {
       icon: FaYoutube,

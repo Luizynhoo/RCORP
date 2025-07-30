@@ -3,8 +3,8 @@ const name = 'AmaWaterways';
 export const AmaWaterways = {
   name: 'AmaWaterways®',
   description: 'Viajes de lujo y destinos exclusivos definen el concepto de esta marca. ',
-  subtitles:'Viajes que desbordan lujo y comodidad por los más hermosos rios del mundo.',
-  subtitleBrands:'Adentrese en culturas exclusivas y el lujo más exquisito en una experiencia única diseñada para aquellos que buscan lo extraordinario.',
+  subtitles: 'Viajes que desbordan lujo y comodidad por los más hermosos rios del mundo.',
+  subtitleBrands: 'Adentrese en culturas exclusivas y el lujo más exquisito en una experiencia única diseñada para aquellos que buscan lo extraordinario.',
   fullDescription: 'Viva la cumbre del lujo y la exclusividad con nuestros tours premium. Ofrecemos alojamientos de primera clase, gastronomía de alta cocina y el privilegio de explorar destinos exclusivos del mundo reservados para unos pocos privilegiados.',
   secondDescription: 'Con un equipo comprometido con la perfección, garantizamos que cada instante de su viaje sea una experiencia sin igual. Con nosotros, cada momento se convierte en un recuerdo inolvidable.',
   slug: name.toLowerCase().replace(/\s+/g, '-'),
@@ -14,7 +14,7 @@ export const AmaWaterways = {
   Image: '/Header/amawaterways-header.webp',
   logoRGB: '/RGB/logo-amawaterways-rgb.png',
   logoHeight: 'h-[30px]',
-  expTitle:'Experiencias Únicas y Transformadoras',
+  expTitle: 'Experiencias Únicas y Transformadoras',
   exp: 'Ofrecemos mucho más que viajes; creamos experiencias transformadoras que lo conectarán con culturas fascinantes, paisajes asombrosos y aventuras inolvidables que permanecerán en su memoria para siempre.',
   videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
   videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',
@@ -25,106 +25,106 @@ export const AmaWaterways = {
     'Conserje personal 24/7',
   ],
   destinations: [
-    { 
-      name: 'Maldivas', 
-      image: 'Bungalows sobre el agua cristalina en Maldivas',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Un paraíso tropical de aguas cristalinas y playas de arena blanca.',
-      description: 'Las Maldivas ofrecen una experiencia única de lujo tropical, con resorts exclusivos sobre las aguas cristalinas del Océano Índico. Disfrute de bungalows privados, spas de clase mundial y experiencias gastronómicas inolvidables.',
-      bestTime: 'Nov - Abr',
+    {
+      name: 'Danubio',
+      image: 'Castillos y ciudades históricas a orillas del Danubio',
+      DestinoImg: '../Destinations/Danubio.webp',
+      shortDescription: 'Un río legendario que conecta culturas, castillos y ciudades vibrantes de Europa Central.',
+      description: 'Navegue por el corazón de Europa a través del Danubio, explorando ciudades como Viena, Budapest y Bratislava. Viva la elegancia imperial, pueblos encantadores y paisajes impresionantes en un crucero culturalmente rico.',
+      bestTime: 'Abr - Oct',
+      duration: '7-14 días',
+      rating: '4.8',
+      highlights: [
+        'Conciertos clásicos en palacios vieneses',
+        'Catas de vino en pueblos austríacos',
+        'Visitas guiadas en Budapest y Bratislava',
+        'Castillos medievales a lo largo del río',
+        'Gastronomía típica en tabernas locales'
+      ]
+    },
+    {
+      name: 'Rin, Mosela y Meno',
+      image: 'Viñedos y pueblos encantadores a orillas del Rin',
+      DestinoImg: '../Destinations/Mosele.webp',
+      shortDescription: 'Romanticismo europeo entre castillos, vino y arquitectura de cuento.',
+      description: 'Explore el romanticismo de Europa navegando por los ríos Rin, Mosela y Meno. Descubra castillos imponentes, deguste vinos premiados y sumérjase en el patrimonio cultural y arquitectónico de la región.',
+      bestTime: 'May - Sep',
       duration: '7-10 días',
       rating: '4.9',
       highlights: [
-        'Bungalows sobre el agua con vistas panorámicas',
-        'Buceo en arrecifes de coral prístinos',
-        'Tratamientos de spa con vista al océano',
-        'Cenas románticas en la playa',
-        'Excursiones de pesca al atardecer'
+        'Catas en viñedos de la región de Mosela',
+        'Castillos medievales como el Marksburg',
+        'Arquitectura de cuento en Rüdesheim',
+        'Cervecerías tradicionales y mercados históricos',
+        'Senderismo suave entre viñedos centenarios'
       ]
     },
-    { 
-      name: 'Dubái', 
-      image: 'Skyline lujoso de Dubái con rascacielos modernos',
-      DestinoImg: 'https://shoppingdecruzeiros.com.br/wp-content/uploads/2018/08/dubai-1.jpg',
-      shortDescription: ' Lujo y modernidad que desafían el desierto.',
-      description: 'Dubái combina la tradición árabe con la modernidad futurista. Experimente hoteles de 7 estrellas, compras en centros comerciales de lujo, safaris por el desierto y una hospitalidad árabe incomparable.',
-      bestTime: 'Nov - Mar',
-      duration: '5-7 días',
-      rating: '4.8',
-      highlights: [
-        'Burj Al Arab – el hotel más lujoso del mundo',
-        'Safari en el desierto con cena beduina',
-        'Compras en Dubai Mall y Gold Souk',
-        'Vistas panorámicas desde el Burj Khalifa',
-        'Experiencias culinarias de clase mundial'
-      ]
-    },
-    { 
-      name: 'Santorini', 
-      image: 'Casas blancas con cúpulas azules en Santorini',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'El romance se fusiona con la belleza de Grecia.',
-      description: 'Santorini encanta con sus casas blancas, cúpulas azules y el atardecer más famoso del mundo. Disfrute de vinos locales, gastronomía mediterránea y vistas impresionantes del Mar Egeo.',
-      bestTime: 'Abr - Oct',
-      duration: '4-6 días',
-      rating: '4.9',
-      highlights: [
-        'Atardecer en Oia – el más famoso del mundo',
-        'Degustación de vinos en bodegas locales',
-        'Paseos en barco por la caldera volcánica',
-        'Auténtica gastronomía mediterránea',
-        'Arquitectura cicládica única'
-      ]
-    },
-    { 
-      name: 'Toscana', 
-      image: 'Paisajes de colinas y cipreses en la Toscana',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Vinos excepcionales y gastronomía auténtica en un destino que combina arte, historia y naturaleza.',
-      description: 'La Toscana ofrece paisajes de ensueño, vinos mundialmente famosos y un rico patrimonio cultural. Explore bodegas centenarias, ciudades medievales y la auténtica cocina italiana.',
-      bestTime: 'Abr - Oct',
-      duration: '6-8 días',
-      rating: '4.8',
-      highlights: [
-        'Degustación en bodegas de Chianti',
-        'Paseos por Florencia y Siena',
-        'Clases de cocina italiana',
-        'Paisajes de colinas y cipreses',
-        'Arte renacentista incomparable'
-      ]
-    },
-    { 
-      name: 'Bora Bora', 
-      image: 'Bungalows sobre la laguna azul turquesa de Bora Bora',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Paraíso exclusivo de aguas turquesas, bungalows sobre el agua y belleza natural inigualable. ',
-      description: 'Bora Bora es el destino soñado para quienes buscan total exclusividad. Con sus aguas turquesas, montañas volcánicas y resorts de lujo, ofrece una experiencia paradisíaca única.',
+    {
+      name: 'Sena, Garona y Dordoña',
+      image: 'Regiones vinícolas de Francia con encanto y sabor',
+      DestinoImg: '../Destinations/Sena.webp',
+      shortDescription: 'Descubra el encanto de Francia entre París y Burdeos, navegando por paisajes históricos y viñedos famosos.',
+      description: 'Explore el corazón vinícola de Francia en Burdeos o navegue por el río Sena desde París hasta Normandía. Degustaciones, historia y paisajes inolvidables marcan esta experiencia elegante.',
       bestTime: 'May - Oct',
-      duration: '7-10 días',
-      rating: '4.9',
-      highlights: [
-        'Bungalows sobre lagunas cristalinas',
-        'Buceo con tiburones y rayas',
-        'Paseos en helicóptero sobre la isla',
-        'Cultura polinesia auténtica',
-        'Spas con tratamientos tradicionales'
-      ]
-    },
-    { 
-      name: 'Seychelles', 
-      image: 'Playa Anse Source d\'Argent con rocas de granito en Seychelles',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Archipiélago encantador en el Índico, lujo discreto y belleza natural para la privacidad y el romance.',
-      description: 'Las Seychelles ofrecen playas de arena blanca, aguas cristalinas y una naturaleza preservada única. Es el destino perfecto para quienes buscan privacidad y contacto con la naturaleza.',
-      bestTime: 'Abr - May, Oct - Nov',
       duration: '7-9 días',
       rating: '4.8',
       highlights: [
-        'Playas de arena blanca y rocas de granito',
-        'Reservas naturales con especies endémicas',
-        'Buceo en aguas cristalinas',
-        'Resorts eco-friendly exclusivos',
-        'Auténtica cocina criolla'
+        'Degustaciones de vino en castillos históricos',
+        'Paseos por viñedos centenarios',
+        'Clases de cocina francesa a bordo',
+        'Mercados locales en Burdeos y París',
+        'Paseos en bicicleta por pueblos rurales'
+      ]
+    },
+    {
+      name: 'Duero',
+      image: 'Paisajes escarpados y viñedos en terrazas',
+      DestinoImg: '../Destinations/Doro.webp',
+      shortDescription: 'Explore el alma de Portugal navegando por el río Duero entre vinos y tradiciones.',
+      description: 'El Duero ofrece un crucero auténtico por el norte de Portugal. Visite bodegas de vino de Oporto, pueblos históricos y disfrute de paisajes naturales deslumbrantes.',
+      bestTime: 'Mar - Oct',
+      duration: '7 días',
+      rating: '4.7',
+      highlights: [
+        'Catas de vino de Oporto en quintas tradicionales',
+        'Visitas a ciudades como Oporto y Régua',
+        'Gastronomía portuguesa con platos típicos',
+        'Paseos por viñedos en terrazas',
+        'Interacción con artesanos y productores locales'
+      ]
+    },
+    {
+      name: 'Mekong',
+      image: 'Mercados flotantes y templos exóticos',
+      DestinoImg: '../Destinations/Mekong.webp',
+      shortDescription: 'Un viaje entre culturas milenarias, templos y mercados vibrantes en el sudeste asiático.',
+      description: 'Navegar por el Mekong es sumergirse en la esencia de Vietnam y Camboya. Descubra templos antiguos, pueblos flotantes y una rica herencia cultural que permanece viva con el tiempo.',
+      bestTime: 'Nov - Feb',
+      duration: '7-12 días',
+      rating: '4.8',
+      highlights: [
+        'Templos de Angkor Wat y Phnom Penh',
+        'Mercados flotantes en Cai Be',
+        'Cocina auténtica del sudeste asiático',
+        'Interacción con comunidades locales',
+        'Paseos en tuk-tuk por pueblos exóticos'
+      ]
+    },
+    {
+      name: 'Nilo o Magdalena (2025)',
+      image: 'Colorida y cultural, la Colombia fluvial',
+      DestinoImg: '../Destinations/Madalena.webp',
+      shortDescription: 'Una nueva forma de explorar Colombia a través de su río más icónico.',
+      description: 'El crucero por el río Magdalena será una oportunidad única para descubrir la música, gastronomía e historia colombiana, navegando entre ciudades vibrantes y paisajes tropicales.',
+      bestTime: 'Dic - Mar',
+      duration: '7-9 días',
+      rating: 'Nuevo en 2025',
+      highlights: [
+        'Ritmos caribeños y espectáculos culturales',
+        'Ciudades históricas como Mompox y Barranquilla',
+        'Degustación de café y platos típicos colombianos',
+        'Interacción con comunidades ribereñas',
+        'Paisajes tropicales y vida silvestre'
       ]
     }
   ],

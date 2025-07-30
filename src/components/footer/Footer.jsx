@@ -91,21 +91,19 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              Contactos internacionales
+              Teléfono
             </motion.span>
             <div>
               {contacts.map((contact, index) => (
                 <motion.div
                   key={contact.country}
-                  style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '14px', marginBottom: '12px' }}
+                  style={{ display: 'flex', alignItems: 'center', fontSize: '14px', marginBottom: '12px' }}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <div className={`flag-icon ${contact.flag}`}></div>
                   <div>
-                    <div style={{ color: '#d1d5db' }}>{contact.country}</div>
                     <div style={{ color: '#9ca3af' }}>{contact.phone}</div>
                   </div>
                 </motion.div>
@@ -128,7 +126,7 @@ const Footer = () => {
               <FaEnvelope style={{ width: '20px', height: '20px', color: '#60a5fa' }} />
               <div>
                 <div style={{ color: '#d1d5db' }}>Correo Electrónico</div>
-                <div style={{ color: '#9ca3af' }}>contacto@rcorp.com</div>
+                <div style={{ color: '#9ca3af' }}>reservas@rcorptravel.com</div>
               </div>
             </div>
 
@@ -182,7 +180,7 @@ const Footer = () => {
             return (
               <Link
                 to={logo.href}
-                key={index}
+                key={logo.href}
                 className={shouldCenterLastItem ? 'center-last-item' : ''}
               >
                 <img
