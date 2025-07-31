@@ -14,7 +14,7 @@ export const Scenic = {
   Image: '/Header/scenic-header.webp',
   logoRGB: '/RGB/logo-scenic-rgb.png',
   logoHeight: 'h-[35px]',
-  expTitle:'Experiencias que Transforman',
+  expTitle: 'Experiencias que Transforman',
   exp: 'Vamos más allá de un simple viaje. Creamos experiencias transformadoras que lo conectan profundamente con culturas, paisajes y aventuras que recordará toda la vida.',
   videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
   videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',
@@ -26,106 +26,106 @@ export const Scenic = {
   ],
   destinations: [
     {
-      name: 'Amazonas',
-      image: 'Río serpenteando por la densa selva amazónica',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'El pulmón del mundo, un escenario de biodiversidad única.',
-      description: 'El Amazonas ofrece la experiencia más auténtica de contacto con la naturaleza. Explore la mayor selva tropical del mundo, observe fauna única y aprenda sobre conservación.',
-      bestTime: 'Jun - Nov',
-      duration: '7-10 días',
-      rating: '4.9',
-      highlights: [
-        'Navegación por ríos amazónicos',
-        'Observación de fauna única',
-        'Comunidades ribereñas tradicionales',
-        'Caminatas por la selva tropical',
-        'Proyectos de conservación'
-      ]
-    },
-    {
-      name: 'Galápagos',
-      image: 'Tortugas gigantes en las Islas Galápagos',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Donde la evolución se observa en su estado más puro.',
-      description: 'Las Islas Galápagos son un santuario natural único en el mundo. Observe especies endémicas, aprenda sobre evolución y contribuya a la conservación de este patrimonio mundial.',
-      bestTime: 'Todo el año',
-      duration: '7-10 días',
-      rating: '4.9',
-      highlights: [
-        'Especies endémicas únicas en el mundo',
-        'Buceo con vida marina',
-        'Proyectos de conservación',
-        'Educación sobre evolución',
-        'Turismo de bajo impacto'
-      ]
-    },
-    {
-      name: 'Borneo',
-      image: 'Orangutanes en su hábitat natural en Borneo',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Tierra de orangutanes y la esencia de la selva ancestral.',
-      description: 'Borneo conserva algunas de las selvas más antiguas del mundo. Observe orangutanes en su hábitat natural y contribuya a proyectos de conservación de esta biodiversidad única.',
+      name: 'Duero',
+      image: 'Viñedos en terrazas y paisajes dorados del Duero portugués',
+      DestinoImg: '../Destinations/DueroPortugal.jpg',
+      shortDescription: 'Rutas fluviales por la histórica región vinícola de Portugal.',
+      description: 'Explore el valle del Duero en barcos como Scenic Azure, combinando paisajes clásicos, pueblos pintorescos y degustaciones de vino en Porto y sus alrededores.',
       bestTime: 'Mar - Oct',
-      duration: '8-12 días',
+      duration: '7‑11 días',
       rating: '4.8',
       highlights: [
-        'Orangutanes en su hábitat natural',
-        'Selvas tropicales primitivas',
-        'Centros de rehabilitación',
-        'Comunidades locales tradicionales',
-        'Biodiversidad excepcional'
+        'Degustación de vinos del Duero',
+        'Paseos por viñedos centenarios',
+        'Excursiones en kayak o en tren panorámico',
+        'Cultura portuguesa y patrimonio mundial',
+        'Servicio de mayordomo en suites panorámicas'
       ]
     },
     {
-      name: 'Madagascar',
-      image: 'Lémures en un árbol en Madagascar',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Un tesoro de biodiversidad única.',
-      description: 'Madagascar es un laboratorio natural con el 90% de especies endémicas. Explore paisajes únicos, observe lémures y contribuya a la conservación de esta biodiversidad excepcional.',
-      bestTime: 'Abr - Nov',
-      duration: '10-14 días',
+      name: 'Reno, Danubio, Mosela, Main, Elba',
+      image: 'Castillos y viñedos a orillas del Danubio y el Rin',
+      DestinoImg: '../Destinations/Mosele.webp',
+      shortDescription: 'Cruceros clásicos entre los grandes ríos y capitales de Europa Central.',
+      description: 'Navegue por los ríos emblemáticos de Europa como Danubio, Rin, Mosela, Meno y Elba a bordo de Scenic Emerald o Amber, con escalas en Viena, Budapest, Basilea y Praga.',
+      bestTime: 'Abr - Oct',
+      duration: '7‑14 días',
+      rating: '4.9',
+      highlights: [
+        'Ciudades como Viena, Budapest y Praga',
+        'Castillos medievales y arquitectura imperial',
+        'Catas de vino en la región del Mosela',
+        'Mercados tradicionales y gastronomía europea',
+        'Conciertos clásicos y excursiones culturales'
+      ]
+    },
+    {
+      name: 'Sena (París‑Normandía)',
+      image: 'La elegancia de París y los paisajes normandos desde el Sena',
+      DestinoImg: '../Destinations/Sena.webp',
+      shortDescription: 'Cruceros de cultura, mercados navideños y paisajes franceses desde París.',
+      description: 'Disfrute del Sena con itinerarios desde París hacia Normandía, excelentes para explorar museos, pueblos como Giverny y mercados navideños únicos en barcos como Scenic Sapphire y Ruby.',
+      bestTime: 'Nov - Dic (mercados navideños), Abr - Oct',
+      duration: '7‑10 días',
+      rating: '4.8',
+      highlights: [
+        'Mercados de Navidad en París y Normandía',
+        'Visita al jardín de Monet en Giverny',
+        'Pueblos costeros y arquitectura normanda',
+        'Arte y cultura francesa clásica',
+        'Experiencias fluviales con lujo europeo'
+      ]
+    },
+    {
+      name: 'Mekong (Vietnam‑Camboya‑Laos)',
+      image: 'Templos, mercados flotantes y naturaleza del Mekong',
+      DestinoImg: '../Destinations/Mekong.webp',
+      shortDescription: 'Cruceros culturales por el Mekong con templos y mercados vibrantes.',
+      description: 'Recorra el Mekong entre Vietnam y Camboya a bordo de Scenic Spirit. Incluye cenas en templos de Angkor, visitas guiadas en tuk‑tuk, mercados flotantes y patrimonio budista.</js>',
+      bestTime: 'Nov - Feb',
+      duration: '7‑18 días',
+      rating: '4.9',
+      highlights: [
+        'Cena exclusiva iluminada en templo de Angkor',
+        'Mercados flotantes en Cai Be',
+        'Tours culturales en Phnom Penh y Siem Reap',
+        'Opciones de actividades Scenic Freechoice',
+        'Servicio de mayordomo, bebidas y fibra óptica incluidos'
+      ]
+    },
+    {
+      name: 'Yangtsé (China)',
+      image: 'Paisajes fluviales chinos y Gargantas del Yangtsé',
+      DestinoImg: '../Destinations/Yangtse.jpg',
+      shortDescription: 'Ruta legendaria por el río más largo de Asia, con las Tres Gargantas.',
+      description: 'Explore el Yangtsé desde Chongqing hasta Yichang o Shanghai. Disfrute de las famosas Tres Gargantas, templos ancestrales, y cultura china tradicional en trayectos de 3 a 14 noches.',
+      bestTime: 'Mar - Nov',
+      duration: '3‑14 noches',
       rating: '4.7',
       highlights: [
-        'Lémures y especies endémicas',
-        'Paisajes únicos en el mundo',
-        'Proyectos de conservación',
-        'Cultura malgache auténtica',
-        'Turismo responsable'
+        'Las Tres Gargantas: Qutang, Wu y Xiling',
+        'Visitas a Fengdu y Baidicheng',
+        'Barcazas de lujo y excursiones culturales',
+        'Historia china y danza tradicional',
+        'Paradas en ciudades portuarias modernas'
       ]
     },
     {
-      name: 'Kenia',
-      image: 'Manada de elefantes en la sabana de Kenia',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Vive safaris sostenibles, e impulsa la conservación.',
-      description: 'Kenia ofrece safaris sostenibles que contribuyen a la conservación de la fauna africana. Observe la Gran Migración y apoye a las comunidades locales.',
-      bestTime: 'Jul - Oct',
-      duration: '8-12 días',
-      rating: '4.8',
+      name: 'Nilo (Egipto)',
+      image: 'Templos egipcios y paisajes históricos junto al Nilo',
+      DestinoImg: '../Destinations/Nilo.png',
+      shortDescription: 'Cruceros históricos entre monumentos egipcios milenarios.',
+      description: 'Recorra el Nilo en embarcaciones boutique de Scenic Eclipse en recorridos culturales entre El Cairo, Luxor, Karnak, Valle de los Reyes y templos faraónicos.',
+      bestTime: 'Oct - Abr',
+      duration: '7‑12 noches',
+      rating: '4.9',
       highlights: [
-        'Gran Migración en el Masai Mara',
-        'Conservación de la vida silvestre',
-        'Comunidades tradicionales masai',
-        'Safaris sostenibles',
-        'Proyectos de conservación'
-      ]
-    },
-    {
-      name: 'Noruega',
-      image: 'Fiordos espectaculares en Noruega',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Fiordos majestuosos y un compromiso con el turismo sostenible.',
-      description: 'Noruega es líder mundial en turismo sostenible. Explore fiordos espectaculares, observe auroras boreales y experimente prácticas de turismo responsable.',
-      bestTime: 'May - Sep (fiordos), Sep - Mar (aurora)',
-      duration: '7-10 días',
-      rating: '4.8',
-      highlights: [
-        'Fiordos patrimonio mundial',
-        'Auroras boreales sostenibles',
-        'Transporte ecológico',
-        'Alojamientos sostenibles',
-        'Cultura sami tradicional'
+        'Valle de los Reyes y templos de Luxor',
+        'Visitas a Karnak y templos de Giza',
+        'Guias egiptólogos expertos a bordo',
+        'Opciones de cronologías históricas personalizadas',
+        'Experiencia cultural profunda y lujo elegante'
       ]
     }
-  ],
+  ]
 };

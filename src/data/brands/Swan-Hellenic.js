@@ -45,7 +45,7 @@ export const SwanHellenic = {
     {
       name: 'Islas remotas del Pacífico y Atlántico',
       image: 'Arquipélagos aislados e exóticos cercanos ao Pacífico Sul e Atlântico',
-      DestinoImg: 'https://images.unsplash.com/photo-1581846891925-7fc1e0f1dc98',
+      DestinoImg: '../Destinations/IlhasRemotas.webp',
       shortDescription: 'Islas aisladas y poco visitadas en rutas boutique oceánicas.',
       description: 'Cruceros exclusivos hacia islas remotas en el Pacífico Sur y el Atlántico, como el archipiélago de Seychelles, Guyana y atolones poco explorados, en itinerarios centrados en la cultura local y la naturaleza.',
       bestTime: 'Oct - Mar',
@@ -62,7 +62,7 @@ export const SwanHellenic = {
     {
       name: 'Asia Central y Océano Índico',
       image: 'Puertos exóticos en Sri Lanka, Maldivas y Omán',
-      DestinoImg: 'https://images.unsplash.com/photo-1581846891925-7fc1e0f1dc98',
+      DestinoImg: '../Destinations/AsiaCentral.webp',
       shortDescription: 'Itinerarios por puertos de cultura milenaria e islas exóticas.',
       description: 'Explore puertos legendarios como Sri Lanka, Omán, Maldivas e incluso aldeas del río Amazonas y Guyana en viajes diseñados por Swan Hellenic, combinando patrimonio cultural y naturaleza exuberante.',
       bestTime: 'Nov - Feb',
@@ -79,7 +79,7 @@ export const SwanHellenic = {
     {
       name: 'Mediterráneo y Mar Negro',
       image: 'Sitios arqueológicos y puertos históricos del Mediterráneo',
-      DestinoImg: 'https://images.unsplash.com/photo-1581609881314-e870aa3b590e',
+      DestinoImg: '../Destinations/Mediterraneo.webp',
       shortDescription: 'Cruceros culturales visitando las raíces de civilizaciones antiguas.',
       description: 'Descubra Grecia, Turquía, Croacia y los enclaves históricos del Mar Negro, con paradas en sitios arqueológicos como Efeso, Troya y antiguos puertos bizantinos en itinerarios llenos de historia y paisajes costeros.',
       bestTime: 'Abr - Oct',
@@ -96,7 +96,7 @@ export const SwanHellenic = {
     {
       name: 'Costa africana e islas atlánticas',
       image: 'Paisajes desérticos y costa de Namibia',
-      DestinoImg: 'https://images.unsplash.com/photo-1600172455255-bf87018d66f0',
+      DestinoImg: '../Destinations/AfricayOceanoIndico.webp',
       shortDescription: 'Rutas por zonas costeras poco exploradas e islas desérticas.',
       description: 'Exploraciones por la costa de África y las islas atlánticas como Namibia, con itinerarios que combinan escenarios naturales impresionantes, patrimonio cultural y experiencias exclusivas fuera de ruta.',
       bestTime: 'May - Sep',
@@ -113,7 +113,7 @@ export const SwanHellenic = {
     {
       name: 'Grand Voyages / Expediciones transcontinentales',
       image: 'Mapa de rutas globales hacia continentes remotos',
-      DestinoImg: 'https://images.unsplash.com/photo-1593629415500-8cdc5f575cd6',
+      DestinoImg: '../Destinations/GrandVoyages.jpeg',
       shortDescription: 'Itinerarios épicos a escala global explorando regiones remotas.',
       description: 'Grand Voyages de Swan Hellenic conectan destinos como Sudamérica, África, el Ártico y Asia en viajes de hasta 20 noches a bordo de SH Vega o SH Diana. Perfecto para exploradores interesados en cultura, naturaleza y viajes excepcionales.',
       bestTime: 'Todo el año según región',
