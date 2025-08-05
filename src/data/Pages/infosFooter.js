@@ -20,7 +20,7 @@ const brandsLogo = [
   { src: '/logo-amawaterways.png', match: 'AmaWaterways', height: 'h-5' },
   { src: '/logo-celebrity.png', match: 'Celebrity Cruises', height: 'h-8' },
   { src: '/logo-crystal.png', match: 'Crystal', height: 'h-5' },
-  { src: '/logo-msc.png', match: 'MSC Cruzeiros', height: 'h-11' },
+  { src: '/logo-msc.png', match: 'MSC Cruceros', height: 'h-11' },
   { src: '/logo-scenic.png', match: 'Scenic', height: 'h-7' },
   { src: '/logo-swan.png', match: 'Swan', height: 'h-8' },
   { src: '/logo-ritz-carlton.png', match: 'Ritz', height: 'h-16' },
@@ -66,7 +66,7 @@ export const infosFooter = {
     },
     {
       icon: FaWhatsapp,
-      href: 'https://wa.me/5511950842678?text=Olá,%20gostaria%20de%20mais%20informações',
+      href: 'https://wa.me/5511950842678?text=¡Hola!,%Quisiera%20más%20mais%20información.',
       label: 'WhatsApp',
       color: '#25D366'
     }

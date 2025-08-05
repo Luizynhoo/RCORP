@@ -25,7 +25,7 @@ export const infosHome = {
       mobileImageURL:'../Banners/Banner-CRY-RCORP.webp',
       imageURL:'../Banners/Banner-CRY-RCORP.webp',
       title: 'Lujo y confort',
-      subtitle: 'Viajes premium con todo el refinamiento',
+      subtitle: 'Viajes premium con sofisticación y elegancia',
       image: 'Resort de lujo com piscina infinita y vista al océano',
       link:'/nuestras-marcas/crystal'
     }

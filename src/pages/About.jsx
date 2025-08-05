@@ -1,35 +1,8 @@
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
-import { Users, Award, Globe, Heart, Target, Zap, ChevronLeft, ChevronRight } from 'lucide-react';
-import Slider from 'react-slick';
+import { Users, Award, Globe, Heart, Target, Zap, } from 'lucide-react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-// Componente de Seta Próxima
-const SampleNextArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div
-      className="absolute right-[-50px] top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-white rounded-full shadow p-2 hover:bg-blue-100 transition"
-      onClick={onClick}
-    >
-      <ChevronRight size={24} className="text-blue-600" />
-    </div>
-  );
-};
-
-// Componente de Seta Anterior
-const SamplePrevArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div
-      className="absolute left-[-50px] top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-white rounded-full shadow p-2 hover:bg-blue-100 transition"
-      onClick={onClick}
-    >
-      <ChevronLeft size={24} className="text-blue-600" />
-    </div>
-  );
-};
 
 const About = () => {
   const values = [
@@ -100,7 +73,7 @@ const About = () => {
                 </h2>
                 <div className="space-y-6 text-gray-600 text-lg">
                   <p>
-                    Rcorp Travel es parte de la reconocida marca R11 Travel , la cual fue fundada en 2016 por nuestro CEO, el empresario Ricardo Amaral,
+                    Rcorp Travel es parte de la reconocida marca R11 Travel, la cual fue fundada en 2016 por nuestro CEO, el empresario Ricardo Amaral,
                     quien cuenta con más de 25 años de experiencia en el segmento de cruceros, habiendo trabajado en organizaciones líderes del sector
                     y sido nombrado uno de los “100 Más Poderosos en Turismo” por Jornal Panrotas de 2011 a 2021.
                   </p>
@@ -126,7 +99,7 @@ const About = () => {
                 <img
                   className="w-full rounded-xl shadow-2xl"
                   alt="Equipo de viaje colaborando en una oficina moderna"
-                  src="https://images.unsplash.com/photo-1651009188116-bb5f80eaf6aa"
+                  src="../sobre.jpg"
                 />
               </motion.div>
             </div>
@@ -157,7 +130,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <motion.div
-                key={value.title} // Adicionando key única
+                key={value.title} 
                 className="bg-white rounded-xl p-8 shadow-lg text-center transition-transform transform hover:-translate-y-2"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}

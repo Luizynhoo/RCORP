@@ -162,10 +162,11 @@ const Home = () => {
               viewport={{ once: true }}
             >
               En nuestra agencia, transformamos
-              sueños en experiencias únicas e inolvidables. Con más
-              de una década y media de trayectoria, somos el socio
-              ideal para descubrir destinos exclusivos alrededor del
-              mundo con un servicio totalmente personalizado.
+              sueños en experiencias únicas e inolvidables. Con casi
+              una década de trayectoria, somos el socio ideal para
+              descubrir destinos exclusivos alrededor del mundo con
+              un servicio totalmente personalizado.
+
             </motion.p>
           </div>
         </div>

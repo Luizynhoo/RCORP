@@ -89,7 +89,7 @@ export const CelebrityCruises = {
         'Navegación entre glaciares activos',
         'Avistamiento de ballenas y osos',
         'Senderismo en bosques boreales',
-        'Excursiones en trineos tirados por perros',
+        'Excursiones en trineos',
         'Exploración de pueblos como Juneau y Ketchikan'
       ]
     },

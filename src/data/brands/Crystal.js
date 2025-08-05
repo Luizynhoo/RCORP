@@ -3,7 +3,7 @@ const name = 'Crystal';
 export const Crystal = {
   name: 'Crystal',
   description: 'Elegancia y confort que navegan por los más inusitados destinos alrededor del mundo. ',
-  subtitles: 'Elegancia y confort que navegan por los másinusitados destinos alrededor del mundo.',
+  subtitles: 'Elegancia y confort que navegan por los más inusitados destinos alrededor del mundo.',
   subtitleBrands: 'Experimente la elegancia y el confort, en un viaje por los destinos más singulares del planeta.',
   fullDescription: 'Cree instantes memorables en perfecta armonía familiar. Nuestros paquetes integran actividades para todas las edades, residencias familiares de confort superior y entretenimiento asegurado para el deleite de cada participante.',
   secondDescription: 'Con un equipo comprometido con la perfección, garantizamos que cada instante de su viaje sea una experiencia sin igual. Con nosotros, cada momento se convierte en un recuerdo inolvidable.',

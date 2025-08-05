@@ -38,7 +38,7 @@ export const SwanHellenic = {
         'Glaciares imponentes y icebergs gigantes',
         'Observación de ballenas, focas y pingüinos',
         'Excursiones en zodiac y kayak polar',
-        'Ponentes expertos en historia y ciencias',
+        'Expertos en historia y ciencia',
         'Conciencia ambiental y safaris en condiciones extremas'
       ]
     },
@@ -122,7 +122,7 @@ export const SwanHellenic = {
       highlights: [
         'Rutas desde Ushuaia o Ciudad del Cabo hasta alta latitud',
         'Experiencias inmersivas en destinos remotos',
-        'A bordo incluyen laboratorio científico y charlas culturales',
+        'Laboratorio científico y charlas culturales',
         'Ambiente boutique y sostenible',
         'Combinación de naturaleza, historia y exploraciones científicas'
       ]

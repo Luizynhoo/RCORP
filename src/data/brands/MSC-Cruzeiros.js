@@ -1,7 +1,7 @@
-const name = 'MSC Cruzeiros';
+const name = 'MSC Cruceros';
 
 export const MSCCruzeiros = {
-  name: 'MSC Cruzeiros',
+  name: 'MSC Cruceros',
   description: 'Experiencias que se traducen en alegría y diversidad para toda la familia.',
   subtitles: 'Descubra experiencias que unen diversión, cultura y a toda la familia. ',
   subtitleBrands: 'Donde las conexiones auténticas y enriquecedoras cobran vida.',
@@ -55,25 +55,25 @@ export const MSCCruzeiros = {
         'Itinerarios desde Barcelona, Valencia y Málaga',
         'Destinos como Italia, Francia y Mallorca',
         'Cultura, playas y gastronomía italiana y española',
-        'Escalas frecuentes en puertos españoles en 2025 :contentReference[oaicite:1]{index=1}',
-        'Tecnología ecológica en barcos como MSC Grandiosa y Seashore :contentReference[oaicite:2]{index=2}'
+        'Escalas frecuentes en puertos españoles en 2025',
+        'Tecnología ecológica en barcos como MSC Grandiosa y Seashore'
       ]
     },
     {
       name: 'América del Sur / Brasil',
       image: 'Costa brasileña, ciudades históricas y playas tropicales',
       DestinoImg: '../Destinations/AmericadoSul.jpg',
-      shortDescription: 'Cruceros por Brasil, Uruguay y Argentina desde amarres brasileños.',
+      shortDescription: ' Cruceros por Brasil, Uruguay y Argentina.',
       description: 'MSC opera múltiples barcos —como MSC Seaview, Grandiosa, Splendida, Poesia, Armonia y Lirica— en itinerarios de 7 noches que conectan Santos, Río de Janeiro, Salvador, Búzios, Montevideo y Buenos Aires.',
       bestTime: 'Nov - Abr',
       duration: '7-9 noches',
       rating: '4.8',
       highlights: [
-        'Temporada 2025–26 con cinco barcos en Sudamérica :contentReference[oaicite:3]{index=3}',
-        'Escalas exclusivas en Búzios, Maceió, Salvador y Punta del Este :contentReference[oaicite:4]{index=4}',
+        'Temporada 2025–26 con cinco barcos en Sudamérica',
+        'Escalas exclusivas en Búzios, Maceió, Salvador y Punta del Este',
         'Posibilidad de embarcar en Santos, Rio e Itajaí',
         'Experiencias culturales en Argentina y Uruguay',
-        'Clima cálido y playas en Brasil durante el verano australes :contentReference[oaicite:5]{index=5}'
+        'Clima cálido y playas en Brasil durante el verano australes'
       ]
     },
     {
@@ -86,7 +86,7 @@ export const MSCCruzeiros = {
       duration: '7-14 noches',
       rating: '4.8',
       highlights: [
-        'Fiordos como Geirangerfjord y Herencia Fjords :contentReference[oaicite:6]{index=6}',
+        'Fiordos como Geirangerfjord y Herencia Fjords',
         'Ciudades bálticas y escandinavas llenas de historia',
         'Cruceros desde Southampton y Kiel',
         'Experiencias en nature y cultura europea',
@@ -97,7 +97,7 @@ export const MSCCruzeiros = {
       name: 'Transatlánticos (Europa ↔ América del Sur)',
       image: 'Mapa de ruta transatlántica conectando continentes',
       DestinoImg: '../Destinations/Transatlantico.webp',
-      shortDescription: 'Trayectos épicos cruzando del Mediterráneo a Sudamérica o viceversa.',
+      shortDescription: 'Itinerários sensacionales desde el Mediterráneo a Sudamérica o vice-versa.',
       description: 'MSC ofrece cruceros transatlánticos que conectan Europa con Brasil, incluyendo rutas desde Barcelona o Génova hasta Buenos Aires o Río, con paradas emblemáticas como Tenerife y Casablanca.',
       bestTime: 'Oct - Mar',
       duration: '17-23 noches',

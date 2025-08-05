@@ -30,7 +30,7 @@ const Brands = () => {
           </div>
         </div>
         <div className="absolute inset-0 opacity-10">
-          <img   
+          <img
             className="w-full h-full object-cover"
             alt="Collage de varios destinos de viaje"
             src="https://images.unsplash.com/photo-1574929583457-b8c64fe82b60" />
@@ -50,7 +50,7 @@ const Brands = () => {
                 viewport={{ once: true }}
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img   
+                  <img
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     alt={brand.heroImage}
                     src={brand.Image} />
@@ -58,11 +58,11 @@ const Brands = () => {
                   <div className="absolute inset-0 flex items-center justify-center">
                   </div>
                 </div>
-                
+
                 <div className="p-8 flex flex-col flex-1">
                   <h3 className="text-2xl font-bold mb-4 text-gray-800">{brand.name}</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed flex-1">{brand.subtitles}</p>
-                  
+
                   <Link
                     to={`/nuestras-marcas/${Object.keys(brandsData)[index]}`}
                     className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-medium transition-colors group mt-auto"
@@ -87,7 +87,7 @@ const Brands = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              ¿Qué marca va contigo?
+              ¿Qué marca de viaje más le atrae?
             </motion.h2>
             <motion.p
               className="text-lg text-gray-600 mb-12"
@@ -96,8 +96,8 @@ const Brands = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              Cada viajero es único, y tenemos la marca perfecta para hacer realidad tus sueños. 
-              Explora nuestras especialidades y descubre cuál se adapta mejor a tu estilo de viaje.
+              Cada viajero es un mundo, y nosotros tenemos la marca perfecta para su próximo destino. Explore
+              nuestras especialidades y descubra cuál se adapta mejor a su estilo de viaje.
             </motion.p>
           </div>
         </div>

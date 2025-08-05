@@ -5,7 +5,7 @@ export const Scenic = {
   description: 'Viajes que inspiran sostenibilidad y armonía con la naturaleza',
   subtitles: 'Viajes que inspiran sostenibilidad y armonía con la naturaleza.',
   subtitleBrands: 'Turismo que nutre el planeta: Fomenta la sostenibilidad y la armonía natural.',
-  fullDescription: 'Viaje de forma consciente con nuestros tours ecológicos. Nos dedicamos a la sostenibilidad, la conservación y el apoyo a comunidades locales, ofreciéndole experiencias únicas en armonía con la naturaleza.',
+  fullDescription: 'Explora el mundo de forma consciente. Nuestros tours ecológicos ofrecen experiencias únicas en armonía con la naturaleza, mientras apoyamos la conservación y a las comunidades locales.',
   secondDescription: 'Con un equipo comprometido con la perfección, garantizamos que cada instante de su viaje sea una experiencia sin igual. Con nosotros, cada momento se convierte en un recuerdo inolvidable.',
   slug: name.toLowerCase().replace(/\s+/g, '-'),
   colorStart: '#C6A367',

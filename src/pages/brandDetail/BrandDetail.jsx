@@ -371,7 +371,7 @@ const BrandDetail = () => {
                 onClick={handleWhatsApp}
               >
                 <Calendar style={{ width: '20px', height: '20px' }} />
-                Reserva Ahora
+                Reserve Ahora
               </Button>
             <Link to="/contactenos" style={{ textDecoration: 'none' }}>  
               <Button

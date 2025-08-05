@@ -5,7 +5,7 @@ const WhatsAppChat = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showGreeting, setShowGreeting] = useState(false);
 
-  const phoneNumber = "5599999999999";
+  const phoneNumber = "5511950842678";
   const defaultMessage = "¡Hola! Quisiera más información.";
   const GREETING_DELAY_MS = 3000;
   const GREETING_COOLDOWN_MS = 5 * 60 * 1000;
