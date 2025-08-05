@@ -16,8 +16,8 @@ export const Crystal = {
   logoHeight: 'h-[30px]',
   expTitle: 'Experiencias Inigualables',
   exp: 'Ofrecemos mucho más que viajes comunes. Conectamos a nuestros viajeros con culturas auténticas, paisajes sublimes y aventuras memorables.',
-  videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
-  videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',
+  videoUrlone: 'https://youtu.be/hk3BuLopw1g?si=KJPaVHgzvFFYgcKR',
+  videoUrltwo: 'https://youtu.be/miJaGGEm004?si=4fMMTXaGroqf8yrS',
   features: [
     'Actividades para cada generación',
     'Residencias familiares selectas',

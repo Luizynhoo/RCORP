@@ -16,8 +16,8 @@ export const SwanHellenic = {
   logoHeight: 'h-[45px]',
   expTitle: 'Experiencias que Transforman',
   exp: 'Creamos experiencias transformadoras que lo conectan profundamente con culturas, paisajes y aventuras que recordará por siempre.',
-  videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
-  videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',
+  videoUrlone: 'https://youtu.be/J0fyy8M0mBs?si=kCJPipk0yIG45yJc',
+  videoUrltwo: 'https://youtu.be/5pidV_54awA?si=HKsCbGOP3RpzrRVV',
   features: [
     'Planificación Corporativa Integral',
     'Alojamientos Estratégicos',

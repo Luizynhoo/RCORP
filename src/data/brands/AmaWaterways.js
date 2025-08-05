@@ -16,8 +16,8 @@ export const AmaWaterways = {
   logoHeight: 'h-[30px]',
   expTitle: 'Experiencias Únicas y Transformadoras',
   exp: 'Ofrecemos mucho más que viajes; creamos experiencias transformadoras que lo conectarán con culturas fascinantes, paisajes asombrosos y aventuras inolvidables que permanecerán en su memoria para siempre.',
-  videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
-  videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',
+  videoUrlone: 'https://youtu.be/j8rrDUjMrWw?si=w6kP3-DJyk4MYXI7',
+  videoUrltwo: 'https://youtu.be/T0yOjQkL8mY?si=MeN1mapdq8WQL0za',
   features: [
     'Alojamientos exclusivos de 5 estrellas',
     'Experiencias gastronómicas con chefs de renombre',
