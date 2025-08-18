@@ -13,11 +13,11 @@ const Home = () => {
   <Helmet>
     <title>Rcorp Travel - Viajes Exclusivos e Inolvidables</title>
     <meta name="description" content="Explora experiencias únicas con Rcorp Travel, una agencia de viajes premium especializada en destinos exclusivos alrededor del mundo." />
-    <link rel="canonical" href="https://homolog.rcorptravel.com/" />
+    <link rel="canonical" href="https://rcorptravel.com/" />
 
     <meta property="og:title" content="Rcorp Travel - Agencia de Viajes Premium" />
     <meta property="og:description" content="Transformamos tus sueños en viajes inolvidables. Conoce nuestras marcas especializadas." />
-    <meta property="og:url" content="https://homolog.rcorptravel.com/" />
+    <meta property="og:url" content="https://rcorptravel.com/" />
     <meta property="og:image" content="https://images.unsplash.com/photo-1604257601296-65d349c74773" />
     <meta property="og:type" content="website" />
 
@@ -26,7 +26,7 @@ const Home = () => {
         "@context": "https://schema.org",
         "@type": "TravelAgency",
         "name": "Rcorp Travel",
-        "url": "https://homolog.rcorptravel.com/",
+        "url": "https://rcorptravel.com/",
         "sameAs": [
           "https://www.facebook.com/rcorptravel",
           "https://www.instagram.com/rcorptravel"

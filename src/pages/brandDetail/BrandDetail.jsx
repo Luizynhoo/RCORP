@@ -34,17 +34,11 @@ const BrandDetail = () => {
 
   const handleWhatsApp = () =>{
     const phone = "5511950842678";
-    const message = "Olá, gostaria de mais informações";
+    const message = "Hola, me gustaría recibir más información.";
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
   }
-
-  // const handleBooking = () => {
-  //   toast({
-  //     title: "🚧 ¡Esta funcionalidad aún no ha sido implementada!"
-  //   });
-  // };
 
   const handleDestinationClick = (destination) => {
     setSelectedDestination(destination);
@@ -76,11 +70,11 @@ const BrandDetail = () => {
       <Helmet>
         <title>{`${brand.name} - Viagens Exclusivas com Rcorp Travel`}</title>
         <meta name="description" content={brand.fullDescription} />
-        <link rel="canonical" href={`https://homolog.rcorptravel.com/marca/${brandId}`} />
+        <link rel="canonical" href={`https://rcorptravel.com/marca/${brandId}`} />
 
         <meta property="og:title" content={`${brand.name} - Viagens Exclusivas com Rcorp Travel`} />
         <meta property="og:description" content={brand.fullDescription} />
-        <meta property="og:url" content={`https://homolog.rcorptravel.com/marca/${brandId}`} />
+        <meta property="og:url" content={`https://rcorptravel.com/marca/${brandId}`} />
         <meta property="og:image" content={brand.Image} />
         <meta property="og:type" content="article" />
 
@@ -94,7 +88,7 @@ const BrandDetail = () => {
             "@context": "https://schema.org",
             "@type": "TravelAgency",
             "name": brand.name,
-            "url": `https://homolog.rcorptravel.com/marca/${brandId}`,
+            "url": `https://rcorptravel.com/marca/${brandId}`,
             "image": brand.Image,
             "description": brand.fullDescription,
           })}

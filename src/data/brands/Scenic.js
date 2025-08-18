@@ -16,8 +16,8 @@ export const Scenic = {
   logoHeight: 'h-[35px]',
   expTitle: 'Experiencias que Transforman',
   exp: 'Vamos más allá de un simple viaje. Creamos experiencias transformadoras que lo conectan profundamente con culturas, paisajes y aventuras que recordará toda la vida.',
-  videoUrlone: 'https://youtu.be/sVDShq1H4_A?si=VK5oOfF4HRj09jpD',
-  videoUrltwo: 'https://youtu.be/xyTsAtuO2DE?si=soij6_8UdCoP5F7V',
+  videoUrlone: 'https://www.youtube.com/embed/sVDShq1H4_A',
+  videoUrltwo: 'https://www.youtube.com/embed/xyTsAtuO2DE',
   features: [
     'Prácticas 100% sostenibles',
     'A poyo a comunidades locales',

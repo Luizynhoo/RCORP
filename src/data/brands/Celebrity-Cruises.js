@@ -16,8 +16,8 @@ export const CelebrityCruises = {
   logoHeight: 'h-[40px]',
   expTitle: 'Experiencias Únicas',
   exp: 'Más que simples viajes, creamos experiencias transformadoras. Lo conectamos con culturas vibrantes, paisajes asombrosos y aventuras que permanecerán en su alma para siempre.',
-  videoUrlone: 'https://youtu.be/TExpyFLhAeI?si=bAg50gXmqC_-xHUB',
-  videoUrltwo: 'https://youtu.be/mUFWBJrPxEg?si=QinhkmW0UR4zGgiK',
+  videoUrlone: 'https://www.youtube.com/embed/TExpyFLhAeI',
+  videoUrltwo: 'https://www.youtube.com/embed/mUFWBJrPxEg',
   features: [
     'Expediciones a lugares remotos',
     'Equipamiento profesional de alta gama incluido',
