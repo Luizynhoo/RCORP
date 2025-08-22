@@ -25,13 +25,12 @@
     overflow: hidden;
 }
 
-/* Ensure Mailchimp form fits within popup-form */
 .popup-form #mc_embed_signup {
   width: 100%;
 }
 
 .popup-form .mc-field-group {
-  margin-bottom: 15px; /* Match your gap spacing */
+  margin-bottom: 15px; 
 }
 
 .popup-form .mc-field-group label {

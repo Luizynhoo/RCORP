@@ -24,9 +24,6 @@ function App() {
     flex: 1
   };
 
-  // aqui você controla o tempo em segundos
-  const popupDelaySeconds = 5;
-
   return (
     <Router>
       <ScrollToTop />
@@ -57,7 +54,7 @@ function App() {
         <Footer />
         <Toaster />
 
-        <SubsPopup delaySeconds={popupDelaySeconds} />
+        <SubsPopup/>
       </div>
     </Router>
   );

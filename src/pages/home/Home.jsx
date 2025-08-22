@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Star, Users, Globe, Award } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import { Link } from 'react-router-dom';
@@ -39,6 +39,8 @@ const Home = () => {
   const { banners, brands } = infosHome;
   const [currentSlide, setCurrentSlide] = useState(0);
   const [visibleSlide, setVisibleSlide] = useState(0);
+  const [FormError, setFormError] = useState(null); 
+  const [formStatus, setFormStatus] = useState(null); 
   const { toast } = useToast();
 
   const nextSlide = () => {
@@ -49,18 +51,46 @@ const Home = () => {
     setCurrentSlide((prev) => (prev - 1 + banners.length) % banners.length);
   };
 
-  const handleCTA = () => {
-    toast({
-      title: "🚧 ¡Esta funcionalidad aún no ha sido implementada, pero no te preocupes! Puedes solicitarla en tu próximo mensaje. 🚀"
-    });
-  };
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisibleSlide(currentSlide);
     }, 800);
     return () => clearTimeout(timer);
-  }, [currentSlide])
+  }, [currentSlide]);
+
+   const handleSubmit = async (event) => {
+    event.preventDefault(); 
+    const form = event.target;
+    const formData = new FormData(form);
+    const email = formData.get('EMAIL');
+    const fname = formData.get('FNAME');
+
+    const mailchimpUrl =
+      'https://rcorptravel.us18.list-manage.com/subscribe/post-json?u=d0e5c22ffe5105e8d5b1bb001&id=706cc08afc&c=?';
+
+    try {
+      await fetch(
+        `${mailchimpUrl}&EMAIL=${encodeURIComponent(email)}&FNAME=${encodeURIComponent(fname)}`,
+        {
+          method: 'GET',
+          mode: 'no-cors', 
+        }
+      );
+      setFormStatus('success');
+      setFormError(null);
+      localStorage.setItem('popupSubscribed', 'true'); 
+      form.reset();
+      toast({
+        title: "¡Inscripción Confirmada!",
+        description: "Pronto recibirás notificaciones sobre nuestras ofertas.",
+        duration: 3000,
+      });
+    } catch (error) {
+      setFormStatus('error');
+      setFormError('Hubo un error al enviar el formulario. Por favor, intenta de nuevo.');
+      console.error('Form submission error:', error);
+    }
+  };
 
   return (
     <div className="min-h-screen">
@@ -232,6 +262,90 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="home-forms">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="form-container"
+        >
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            Inscríbete para recibir nuestras ofertas
+          </motion.h2>
+
+          <motion.form
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            onSubmit={handleSubmit}
+            className="form-content"
+            noValidate
+          >
+            <motion.input
+              type="text"
+              name="FNAME"
+              placeholder="Nome"
+              whileFocus={{ scale: 1.02 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.1 }}
+              className="form-input"
+              required
+            />
+
+            <motion.input
+              type="email"
+              name="EMAIL"
+              placeholder="E-mail"
+              whileFocus={{ scale: 1.02 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.1 }}
+              className="form-input"
+              required
+            />
+
+            <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+              <input
+                type="text"
+                name="b_d0e5c22ffe5105e8d5b1bb001_706cc08afc"
+                tabIndex={-1}
+                defaultValue=""
+              />
+            </div>
+
+            <motion.label
+              className="checkbox-label"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.1 }}
+              required
+            >
+              <input type="checkbox" className="checkbox" required />
+              Acepto recibir novedades y ofertas de Rcorp Travel
+            </motion.label>
+
+            <motion.button
+              type="submit"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.1 }}
+              className="submit-button"
+            >
+              Enviar
+            </motion.button>
+          </motion.form>
+        </motion.div>
+      </section>
     </div>
   );
 };
