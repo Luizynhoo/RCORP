@@ -291,7 +291,7 @@ const Home = () => {
             <motion.input
               type="text"
               name="FNAME"
-              placeholder="Nome"
+              placeholder="Nombre"
               whileFocus={{ scale: 1.02 }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -303,7 +303,7 @@ const Home = () => {
             <motion.input
               type="email"
               name="EMAIL"
-              placeholder="E-mail"
+              placeholder="Correo electrónico"
               whileFocus={{ scale: 1.02 }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
