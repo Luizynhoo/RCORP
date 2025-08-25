@@ -134,22 +134,12 @@ const BrandDetail = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Button
-                size="lg"
-                style={{
-                  background: 'white',
-                  color: '#1f2937',
-                  padding: '16px 32px',
-                  fontSize: '18px',
-                  borderRadius: '50px',
-                  border: 'none',
-                  cursor: 'pointer',
-                  fontWeight: 600
-                }}
+              <motion.button
+                className='ButtonSubscribe rounded-full'
                 onClick={handleWhatsApp}
               >
                 Reserve Ahora
-              </Button>
+              </motion.button>
             </motion.div>
           </div>
         </div>
@@ -350,8 +340,8 @@ const BrandDetail = () => {
               <Button
                 size="lg"
                 style={{
-                  background: 'white',
-                  color: '#1f2937',
+                  background: '#002D5F',
+                  color: '#fff',
                   padding: '16px 32px',
                   fontSize: '18px',
                   borderRadius: '50px',

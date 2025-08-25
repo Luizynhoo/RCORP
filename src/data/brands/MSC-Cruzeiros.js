@@ -16,8 +16,8 @@ export const MSCCruzeiros = {
   logoHeight: 'h-[50px]',
   expTitle: 'Experiencias Inigualables',
   exp: 'Ofrecemos mucho más que simples trayectos; creamos experiencias transformadoras que lo conectan profundamente con culturas milenarias, paisajes sublimes y aventuras inolvidables que perdurarán en su memoria para siempre.',
-  videoUrlone: 'https://www.youtube.com/embed/8McJUhsoDVY',
-  videoUrltwo: 'https://www.youtube.com/embed/dle83luOjLw',
+  videoUrlone: 'https://www.youtube.com/embed/Ja45-0VyxYk',
+  videoUrltwo: 'https://www.youtube.com/embed/9GP6zzqQz0I',
   features: [
     'Guías especializados en historia que revelan los secretos de cada destino.',
     'Acceso exclusivo a sitios arqueológicos, permitiéndole explorar sin las multitudes.',

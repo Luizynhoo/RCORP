@@ -16,8 +16,8 @@ export const RitzCarlton = {
   logoHeight: 'h-[75px]',
   expTitle:'Experiencias que Transforman',
   exp: 'Ofrecemos mucho más que simples viajes. Creamos experiencias transformadoras que lo conectan con culturas, paisajes y aventuras que permanecerán en su memoria para siempre.',
-  videoUrlone: 'https://www.youtube.com/embed/Em7rgRpJ0Qk',
-  videoUrltwo: 'https://www.youtube.com/embed/YfsfOloEHOo',
+  videoUrlone: 'https://www.youtube.com/embed/Md2k_IlFkoI',
+  videoUrltwo: 'https://www.youtube.com/embed/eq0LWR3YBtw',
   features: [
     'Yates de lujo con suites espaciosas y terraza privada',
     'Servicio personalizado y discreto',
