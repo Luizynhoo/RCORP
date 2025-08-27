@@ -340,7 +340,7 @@ const BrandDetail = () => {
               <Button
                 size="lg"
                 style={{
-                  background: '#002D5F',
+                  background: '#E4763A',
                   color: '#fff',
                   padding: '16px 32px',
                   fontSize: '18px',
