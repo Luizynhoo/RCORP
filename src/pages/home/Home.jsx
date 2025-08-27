@@ -113,6 +113,7 @@ const Home = () => {
                 src={banners[currentSlide].imageURL}
                 alt={banners[currentSlide].title}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </picture>
             <div className="absolute inset-0 bg-black/30" />
@@ -249,6 +250,7 @@ const Home = () => {
                           src={brand.image}
                           alt={brand.name}
                           className={`${brand.height} mx-auto object-contain transition-all duration-300`}
+                          loading="lazy"
                         />
                       </div>
                       <p className="text-gray-600 text-center text-sm leading-snug">{brand.description}</p>

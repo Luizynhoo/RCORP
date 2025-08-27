@@ -100,6 +100,7 @@ const BrandDetail = () => {
           className='heroImageStyle'
           alt={`${brand.name} hero`}
           src={`${brand.Image}`}
+          loading="lazy"
         />
         <div style={heroOverlayStyle} />
 
@@ -281,6 +282,7 @@ const BrandDetail = () => {
                   style={{ width: '100%', height: '250px', objectFit: 'cover' }}
                   alt={destination.name}
                   src={destination.DestinoImg}
+                  loading="lazy"
                 />
                 <div style={{
                   position: 'absolute',
