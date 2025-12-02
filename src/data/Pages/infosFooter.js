@@ -40,9 +40,15 @@ export const infosFooter = {
 
   brands: brandsLinks,
 
-  contacts: [
-    { phone: '+55 11 95084-2678' },
-  ],
+contacts: [
+  { country: "Colômbia", phone: "+57 601 4898312", flag: "co" },
+  { country: "El Salvador", phone: "+503 2113 0398", flag: "sv" },
+  { country: "Panamá", phone: "+507 839 1861", flag: "pa" },
+  { country: "Peru", phone: "+51 1 7050804", flag: "pe" },
+  { country: "República Dominicana", phone: "+1 849 936 1380", flag: "do" }
+],
+
+
 
   socialLinks: [
     {

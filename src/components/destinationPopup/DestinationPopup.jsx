@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { X, MapPin, Calendar, Users, Star, AlignCenter } from 'lucide-react';
 import { FaStar } from 'react-icons/fa'; 

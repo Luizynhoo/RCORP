@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { motion, AnimatePresence, frame } from 'framer-motion';
-import { ArrowLeft, Star, MapPin, Calendar, Users, Play } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Star, Calendar, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import DestinationPopup from '@/components/destinationPopup/DestinationPopup';

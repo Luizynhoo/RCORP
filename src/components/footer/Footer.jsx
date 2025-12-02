@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaEnvelope } from 'react-icons/fa';
-import LogoRcorp from "/Logo-RCORP-white.png";
 import { infosFooter } from '../../data/Pages/infosFooter';
+import 'flag-icon-css/css/flag-icons.min.css';
 
 import './footer.css';
 
@@ -20,7 +20,7 @@ const Footer = () => {
               </span>
               {brands.map((brand, index) => (
                 <motion.a
-                  key={`${brand.label}-${index}`} // Combina label com index para unicidade
+                  key={`${brand.label}-${index}`}
                   href={brand.href}
                   style={{
                     fontSize: '16px',
@@ -84,28 +84,31 @@ const Footer = () => {
 
           <div>
             <motion.span
-              className="sectionTitleStyle"
+              className='sectionTitleStyle'
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              Teléfono
+              Teléfonos
             </motion.span>
             <div>
               {contacts.map((contact, index) => (
                 <motion.div
-                  key={`${contact.country}-${index}`} // Combina country com index
-                  style={{ display: 'flex', alignItems: 'center', fontSize: '14px', marginBottom: '12px' }}
+                  key={contact.country}
+                  style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '14px', marginBottom: '12px' }}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
+                  <div className={`flag-icon flag-icon-${contact.flag}`}></div>
                   <div>
+                    <div style={{ color: '#d1d5db' }}>{contact.country}</div>
                     <div style={{ color: '#9ca3af' }}>{contact.phone}</div>
                   </div>
                 </motion.div>
+
               ))}
             </div>
           </div>
@@ -132,7 +135,7 @@ const Footer = () => {
             <div style={{ display: 'flex', gap: '12px' }}>
               {socialLinks.map((social, index) => (
                 <motion.a
-                  key={`${social.label}-${index}`} // Combina label com index
+                  key={`${social.label}-${index}`}
                   href={social.href}
                   className="socialLinksStyle"
                   whileHover={{ scale: 1.1 }}
@@ -177,7 +180,7 @@ const Footer = () => {
             return (
               <Link
                 to={logo.href}
-                key={`${logo.href}-${index}`} // Combina href com index
+                key={`${logo.href}-${index}`}
                 className={shouldCenterLastItem ? 'center-last-item' : ''}
               >
                 <img
