@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { motion, AnimatePresence, frame } from 'framer-motion';
-import { ArrowLeft, Star, MapPin, Calendar, Users, Play } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Star, Calendar, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import DestinationPopup from '@/components/destinationPopup/DestinationPopup';
@@ -34,17 +34,11 @@ const BrandDetail = () => {
 
   const handleWhatsApp = () =>{
     const phone = "5511950842678";
-    const message = "Olá, gostaria de mais informações";
+    const message = "Hola, me gustaría recibir más información.";
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
   }
-
-  // const handleBooking = () => {
-  //   toast({
-  //     title: "🚧 ¡Esta funcionalidad aún no ha sido implementada!"
-  //   });
-  // };
 
   const handleDestinationClick = (destination) => {
     setSelectedDestination(destination);
@@ -76,11 +70,11 @@ const BrandDetail = () => {
       <Helmet>
         <title>{`${brand.name} - Viagens Exclusivas com Rcorp Travel`}</title>
         <meta name="description" content={brand.fullDescription} />
-        <link rel="canonical" href={`https://homolog.rcorptravel.com/marca/${brandId}`} />
+        <link rel="canonical" href={`https://rcorptravel.com/marca/${brandId}`} />
 
         <meta property="og:title" content={`${brand.name} - Viagens Exclusivas com Rcorp Travel`} />
         <meta property="og:description" content={brand.fullDescription} />
-        <meta property="og:url" content={`https://homolog.rcorptravel.com/marca/${brandId}`} />
+        <meta property="og:url" content={`https://rcorptravel.com/marca/${brandId}`} />
         <meta property="og:image" content={brand.Image} />
         <meta property="og:type" content="article" />
 
@@ -94,7 +88,7 @@ const BrandDetail = () => {
             "@context": "https://schema.org",
             "@type": "TravelAgency",
             "name": brand.name,
-            "url": `https://homolog.rcorptravel.com/marca/${brandId}`,
+            "url": `https://rcorptravel.com/marca/${brandId}`,
             "image": brand.Image,
             "description": brand.fullDescription,
           })}
@@ -106,6 +100,7 @@ const BrandDetail = () => {
           className='heroImageStyle'
           alt={`${brand.name} hero`}
           src={`${brand.Image}`}
+          loading="lazy"
         />
         <div style={heroOverlayStyle} />
 
@@ -140,22 +135,12 @@ const BrandDetail = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Button
-                size="lg"
-                style={{
-                  background: 'white',
-                  color: '#1f2937',
-                  padding: '16px 32px',
-                  fontSize: '18px',
-                  borderRadius: '50px',
-                  border: 'none',
-                  cursor: 'pointer',
-                  fontWeight: 600
-                }}
+              <motion.button
+                className='ButtonSubscribe rounded-full'
                 onClick={handleWhatsApp}
               >
                 Reserve Ahora
-              </Button>
+              </motion.button>
             </motion.div>
           </div>
         </div>
@@ -297,6 +282,7 @@ const BrandDetail = () => {
                   style={{ width: '100%', height: '250px', objectFit: 'cover' }}
                   alt={destination.name}
                   src={destination.DestinoImg}
+                  loading="lazy"
                 />
                 <div style={{
                   position: 'absolute',
@@ -356,8 +342,8 @@ const BrandDetail = () => {
               <Button
                 size="lg"
                 style={{
-                  background: 'white',
-                  color: '#1f2937',
+                  background: '#E4763A',
+                  color: '#fff',
                   padding: '16px 32px',
                   fontSize: '18px',
                   borderRadius: '50px',
@@ -371,7 +357,7 @@ const BrandDetail = () => {
                 onClick={handleWhatsApp}
               >
                 <Calendar style={{ width: '20px', height: '20px' }} />
-                Reserva Ahora
+                Reserve Ahora
               </Button>
             <Link to="/contactenos" style={{ textDecoration: 'none' }}>  
               <Button

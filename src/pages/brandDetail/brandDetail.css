@@ -16,6 +16,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .heroTextStyle {
@@ -85,6 +87,21 @@
     margin-bottom: 32px;
 }
 
+.ButtonSubscribe {
+    display: block;
+    margin: 0 auto;  
+    max-width: 600px; 
+    text-align: center;
+    background: #E4763A;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
 
 
 @media (max-width: 768px) {
@@ -100,15 +117,15 @@
         font-size: 40px;
     }
 
-  .destinationGridStyle {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin: 0 auto;
-  }
+    .destinationGridStyle {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 
-  .destinationCardStyle {
-    height: auto;
-    max-width: 100%;
-  }
+    .destinationCardStyle {
+        height: auto;
+        max-width: 100%;
+    }
 
 }

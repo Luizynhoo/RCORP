@@ -1,7 +1,7 @@
-const name = 'MSC Cruzeiros';
+const name = 'MSC Cruceros';
 
 export const MSCCruzeiros = {
-  name: 'MSC Cruzeiros',
+  name: 'MSC Cruceros',
   description: 'Experiencias que se traducen en alegría y diversidad para toda la familia.',
   subtitles: 'Descubra experiencias que unen diversión, cultura y a toda la familia. ',
   subtitleBrands: 'Donde las conexiones auténticas y enriquecedoras cobran vida.',
@@ -14,10 +14,10 @@ export const MSCCruzeiros = {
   Image: '/Header/msc-header.webp',
   logoRGB: '/RGB/logo-msc-rgb.png',
   logoHeight: 'h-[50px]',
-  expTitle:'Experiencias Inigualables',
+  expTitle: 'Experiencias Inigualables',
   exp: 'Ofrecemos mucho más que simples trayectos; creamos experiencias transformadoras que lo conectan profundamente con culturas milenarias, paisajes sublimes y aventuras inolvidables que perdurarán en su memoria para siempre.',
-  videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
-  videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',
+  videoUrlone: 'https://www.youtube.com/embed/Ja45-0VyxYk',
+  videoUrltwo: 'https://www.youtube.com/embed/9GP6zzqQz0I',
   features: [
     'Guías especializados en historia que revelan los secretos de cada destino.',
     'Acceso exclusivo a sitios arqueológicos, permitiéndole explorar sin las multitudes.',
@@ -26,106 +26,90 @@ export const MSCCruzeiros = {
   ],
   destinations: [
     {
-      name: 'Egipto',
-      image: 'Pirámides de Guiza con camellos en el desierto',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Cuna de la cavilación antigua',
-      description: 'Egipto ofrece un viaje a través de 5000 años de historia. Explore las pirámides, navegue por el Nilo y descubra los tesoros de los faraones en una experiencia cultural única.',
-      bestTime: 'Oct - Abr',
-      duration: '8-12 días',
+      name: 'Caribe',
+      image: 'Playas paradisíacas y escenarios tropicales en el Caribe',
+      DestinoImg: '../Destinations/Caribe.jpg',
+      shortDescription: 'Islas exóticas con aguas turquesas y ritmos vibrantes.',
+      description: 'Disfrute de itinerarios en el Caribe a bordo de MSC World America, MSC Seashore o MSC Seascape, con salidas desde Miami y Port Canaveral. Incluye destinos como Bahamas, Cayman, Costa Maya y Ocean Cay MSC Marine Reserve.',
+      bestTime: 'Dic - Abr',
+      duration: '3-7 días',
       rating: '4.8',
       highlights: [
-        'Pirámides de Guiza y la Gran Esfinge',
-        'Crucero por el Río Nilo',
-        'Valle de los Reyes y tumba de Tutankamón',
-        'Templos de Luxor y Karnak',
-        'Museo Egipcio en El Cairo'
+        'Parada privada en Ocean Cay MSC Marine Reserve',
+        'Visitas a Nassau, Roatán y Cozumel',
+        'Playas cristalinas y deportes acuáticos',
+        'Restaurantes temáticos y gastronomía caribeña',
+        'Experiencia boutique con nuevo MSC World America'
       ]
     },
     {
-      name: 'Perú',
-      image: 'Machu Picchu envuelta en neblina matinal',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Un viaje al corazón del Imperio Inca y la rica cultura andina.',
-      description: 'Perú conserva la rica herencia del Imperio Inca y culturas precolombinas. Explore Machu Picchu, Cusco y experimente la auténtica cultura andina.',
-      bestTime: 'May - Sep',
-      duration: '8-10 días',
-      rating: '4.9',
-      highlights: [
-        'Machu Picchu - maravilla del mundo',
-        'Ciudad imperial de Cusco',
-        'Valle Sagrado de los Incas',
-        'Mercados tradicionales andinos',
-        'Gastronomía peruana auténtica'
-      ]
-    },
-    {
-      name: 'Grecia',
-      image: 'Acrópolis de Atenas al atardecer',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'El origen de la maravillosa cultura occidental.',
-      description: 'Grecia es la cuna de la democracia, la filosofía y el teatro. Explore la Acrópolis, las islas paradisíacas y sumérjase en la rica mitología griega en un viaje cultural fascinante.',
+      name: 'Mediterráneo',
+      image: 'Puertos europeos y costas bañadas por el sol en el Mediterráneo',
+      DestinoImg: '../Destinations/Mediterraneo.webp',
+      shortDescription: 'Rutas clásicas por las costas más emblemáticas de Europa.',
+      description: 'Navegue por el Mediterráneo Occidental desde puertos españoles como Barcelona y Málaga, visitando ciudades como Roma, Cannes, Génova o Mallorca, a bordo de MSC Grandiosa, Seashore o otros barcos icónicos.',
       bestTime: 'Abr - Oct',
-      duration: '7-10 días',
-      rating: '4.8',
-      highlights: [
-        'Acrópolis y Partenón en Atenas',
-        'Sitio arqueológico de Delfos',
-        'Islas griegas y cultura local',
-        'Museos arqueológicos únicos',
-        'Gastronomía mediterránea'
-      ]
-    },
-    {
-      name: 'Japón',
-      image: 'Templo Kinkaku-ji (Pabellón Dorado) en Kioto',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Donde la cultura milenaria revela su enigmático encanto',
-      description: 'Japón ofrece una fascinante combinación de tradición milenaria y modernidad. Experimente ceremonias del té, templos zen, arte tradicional y la cultura japonesa única.',
-      bestTime: 'Mar - May, Sep - Nov',
-      duration: '10-14 días',
+      duration: '7-14 días',
       rating: '4.9',
       highlights: [
-        'Templos y jardines zen en Kioto',
-        'Ceremonia tradicional del té',
-        'Arte y cultura samurái',
-        'Festivales tradicionales estacionales',
-        'Gastronomía japonesa auténtica'
+        'Itinerarios desde Barcelona, Valencia y Málaga',
+        'Destinos como Italia, Francia y Mallorca',
+        'Cultura, playas y gastronomía italiana y española',
+        'Escalas frecuentes en puertos españoles en 2025',
+        'Tecnología ecológica en barcos como MSC Grandiosa y Seashore'
       ]
     },
     {
-      name: 'India',
-      image: 'Taj Mahal en Agra al amanecer',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'El alma de la espiritualidad y un tapiz vibrante de culturas.',
-      description: 'India ofrece una experiencia cultural intensa con su diversidad de religiones, tradiciones y paisajes. Desde el Taj Mahal hasta los templos sagrados, un viaje espiritual único.',
-      bestTime: 'Oct - Mar',
-      duration: '10-15 días',
-      rating: '4.7',
-      highlights: [
-        'Taj Mahal - símbolo del amor eterno',
-        'Palacios de maharajás en Rajastán',
-        'Espiritualidad en Varanasi',
-        'Templos y ashrams sagrados',
-        'Diversidad cultural única'
-      ]
-    },
-    {
-      name: 'Camboya',
-      image: 'Templo de Angkor Wat al amanecer en Camboya',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Un viaje al corazón del legado de Angkor y la auténtica cultura jemer.',
-      description: 'Camboya preserva uno de los complejos arqueológicos más impresionantes del mundo. Explore Angkor Wat y sumérjase en la rica cultura jemer en una experiencia transformadora.',
-      bestTime: 'Nov - Mar',
-      duration: '6-8 días',
+      name: 'América del Sur / Brasil',
+      image: 'Costa brasileña, ciudades históricas y playas tropicales',
+      DestinoImg: '../Destinations/AmericadoSul.jpg',
+      shortDescription: ' Cruceros por Brasil, Uruguay y Argentina.',
+      description: 'MSC opera múltiples barcos —como MSC Seaview, Grandiosa, Splendida, Poesia, Armonia y Lirica— en itinerarios de 7 noches que conectan Santos, Río de Janeiro, Salvador, Búzios, Montevideo y Buenos Aires.',
+      bestTime: 'Nov - Abr',
+      duration: '7-9 noches',
       rating: '4.8',
       highlights: [
-        'Complejo de templos de Angkor',
-        'Angkor Wat al amanecer',
-        'Cultura jemer tradicional',
-        'Mercados flotantes únicos',
-        'Artesanía local auténtica'
+        'Temporada 2025–26 con cinco barcos en Sudamérica',
+        'Escalas exclusivas en Búzios, Maceió, Salvador y Punta del Este',
+        'Posibilidad de embarcar en Santos, Rio e Itajaí',
+        'Experiencias culturales en Argentina y Uruguay',
+        'Clima cálido y playas en Brasil durante el verano australes'
+      ]
+    },
+    {
+      name: 'Norte de Europa y Báltico',
+      image: 'Fiordos noruegos y ciudades bálticas llenas de historia',
+      DestinoImg: '../Destinations/NortedaEuropa.webp',
+      shortDescription: 'Naturaleza escandinava y patrimonio medieval en cruceros nórdicos.',
+      description: 'Itinerarios desde Kiel, Hamburgo o Southampton visitando fiordos noruegos y ciudades como Oslo, Estocolmo, Copenhague, Riga y Tallin a bordo de MSC Virtuosa, Euribia o Poesia.',
+      bestTime: 'May - Sep',
+      duration: '7-14 noches',
+      rating: '4.8',
+      highlights: [
+        'Fiordos como Geirangerfjord y Herencia Fjords',
+        'Ciudades bálticas y escandinavas llenas de historia',
+        'Cruceros desde Southampton y Kiel',
+        'Experiencias en nature y cultura europea',
+        'Opciones familiares y excursiones guiadas en cada puerto'
+      ]
+    },
+    {
+      name: 'Transatlánticos (Europa ↔ América del Sur)',
+      image: 'Mapa de ruta transatlántica conectando continentes',
+      DestinoImg: '../Destinations/Transatlantico.webp',
+      shortDescription: 'Itinerários sensacionales desde el Mediterráneo a Sudamérica o vice-versa.',
+      description: 'MSC ofrece cruceros transatlánticos que conectan Europa con Brasil, incluyendo rutas desde Barcelona o Génova hasta Buenos Aires o Río, con paradas emblemáticas como Tenerife y Casablanca.',
+      bestTime: 'Oct - Mar',
+      duration: '17-23 noches',
+      rating: '5.0',
+      highlights: [
+        'Itinerarios como Barcelona → Buenos Aires y viceversa',
+        'Rutas que incluyen Tenerife, Casablanca y Río de Janeiro',
+        'Experiencia de crucero completo, ideal para viajes prolongados',
+        'Lujo a bordo con especial atención al confort y gastronomía',
+        'Diversidad cultural en cada puerto visitado'
       ]
     }
   ],
+
 };

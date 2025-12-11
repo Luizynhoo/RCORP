@@ -14,10 +14,10 @@ export const CelebrityCruises = {
   Image: '/Header/celebrity-header.webp',
   logoRGB: '/RGB/logo-celebrity-rgb.png',
   logoHeight: 'h-[40px]',
-  expTitle:'Experiencias Únicas',
+  expTitle: 'Experiencias Únicas',
   exp: 'Más que simples viajes, creamos experiencias transformadoras. Lo conectamos con culturas vibrantes, paisajes asombrosos y aventuras que permanecerán en su alma para siempre.',
-  videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
-  videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',
+  videoUrlone: 'https://www.youtube.com/embed/rDSAnH96ejY',
+  videoUrltwo: 'https://www.youtube.com/embed/NrmhUCNTS4g',
   features: [
     'Expediciones a lugares remotos',
     'Equipamiento profesional de alta gama incluido',
@@ -26,105 +26,105 @@ export const CelebrityCruises = {
   ],
   destinations: [
     {
-      name: 'Patagonia',
-      image: 'Paisaje dramático de la Patagonia con montañas y glaciares',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Paisajes dramáticos invitan a un trekking épico, creando una aventura que recordarás para siempre',
-      description: 'La Patagonia ofrece algunos de los paisajes más impresionantes del planeta. Entre glaciares, montañas y pampas, viva aventuras épicas en uno de los últimos territorios salvajes de la Tierra.',
-      bestTime: 'Nov - Mar',
-      duration: '10-14 días',
-      rating: '4.9',
-      highlights: [
-        'Trekking en el Parque Torres del Paine',
-        'Escalada en el Cerro Fitz Roy',
-        'Navegación entre icebergs',
-        'Observación única de vida silvestre',
-        'Campamentos en lugares remotos'
-      ]
-    },
-    {
-      name: 'Nepal',
-      image: 'Trekking en el Himalaya con vista al Everest',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Aventura en el Techo del Mundo',
-      description: 'Nepal ofrece algunas de las rutas de trekking más espectaculares del mundo. Camine por las montañas del Himalaya, visite monasterios budistas y experimente la hospitalidad sherpa.',
-      bestTime: 'Mar - May, Sep - Nov',
-      duration: '12-18 días',
-      rating: '4.8',
-      highlights: [
-        'Trekking al Campo Base del Everest',
-        'Vista de los picos más altos del mundo',
-        'Cultura sherpa auténtica',
-        'Monasterios budistas centenarios',
-        'Aventura en gran altitud'
-      ]
-    },
-    {
-      name: 'Costa Rica',
-      image: 'Aventura en la selva tropical de Costa Rica',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Sumérgete en las maravillas de un exuberante bosque tropical',
-      description: 'Costa Rica es un paraíso para los aventureros, con selvas tropicales, volcanes activos y una biodiversidad impresionante. Experimente tirolesa, rafting y observación de fauna silvestre.',
+      name: 'Caribe',
+      image: 'Playas paradisíacas con aguas turquesas en el Caribe',
+      DestinoImg: '../Destinations/Caribe.jpg',
+      shortDescription: 'Relájate en playas de arena blanca y explora islas tropicales llenas de encanto caribeño',
+      description: 'El Caribe es sinónimo de sol, mar cristalino y ritmo tropical. Desde las Bahamas hasta Cozumel, cada isla ofrece una mezcla única de cultura, gastronomía, naturaleza y aventura.',
       bestTime: 'Dic - Abr',
       duration: '7-10 días',
-      rating: '4.7',
-      highlights: [
-        'Tirolesa sobre la selva tropical',
-        'Rafting en ríos con rápidos',
-        'Observación de fauna silvestre',
-        'Caminatas en volcanes activos',
-        'Buceo en el Pacífico y el Caribe'
-      ]
-    },
-    {
-      name: 'Islandia',
-      image: 'Aurora boreal sobre paisaje helado en Islandia',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Descubre la impresionante tierra de fuego y hielo',
-      description: 'Islandia ofrece paisajes únicos con volcanes, glaciares, géiseres y auroras boreales. Una aventura en uno de los países más espectaculares y salvajes de Europa.',
-      bestTime: 'Jun - Ago (verano), Sep - Mar (auroras)',
-      duration: '8-12 días',
       rating: '4.9',
       highlights: [
-        'Caminatas en glaciares',
-        'Observación de auroras boreales',
-        'Baños en aguas termales naturales',
-        'Exploración de cuevas de hielo',
-        'Avistamiento de ballenas'
+        'Playas de arena blanca y aguas transparentes',
+        'Snorkel y buceo en arrecifes de coral',
+        'Vida nocturna en islas como Cozumel',
+        'Excursiones en catamarán y motos acuáticas',
+        'Compras y cultura local en puertos caribeños'
       ]
     },
     {
-      name: 'Nueva Zelanda',
-      image: 'Paisaje dramático de fiordos en Nueva Zelanda',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Donde la aventura se entrelaza con paisajes cinematográficos',
-      description: 'Nueva Zelanda es el destino definitivo para aventureros, ofreciendo desde bungee jump hasta trekking en fiordos. Paisajes que sirvieron de escenario para películas épicas.',
-      bestTime: 'Nov - Mar',
+      name: 'Mediterráneo',
+      image: 'Atardecer sobre Santorini, Grecia, con casas blancas y mar azul',
+      DestinoImg: '../Destinations/Mediterraneo.webp',
+      shortDescription: 'Un viaje entre historia, cultura y paisajes costeros inolvidables',
+      description: 'Descubre la magia del Mediterráneo con paradas en Italia, Grecia, España y Turquía. Disfruta de gastronomía local, ruinas antiguas y playas bañadas por el sol.',
+      bestTime: 'May - Oct',
       duration: '10-14 días',
       rating: '4.8',
       highlights: [
-        'Bungee jump en el lugar donde nació la modalidad',
-        'Trekking en los Alpes del Sur',
-        'Navegación por fiordos',
-        'Aventuras extremas en Queenstown',
-        'Cultura maorí auténtica'
+        'Ruinas antiguas en Roma y Atenas',
+        'Puestas de sol en Santorini',
+        'Cultura y arquitectura en Barcelona',
+        'Cocina mediterránea a bordo y en tierra',
+        'Mercados locales y paseos costeros'
       ]
     },
     {
-      name: 'Jordania',
-      image: 'El Tesoro en Petra, Jordania, tallado en roca',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Experiencia inolvidable entre la majestuosidad del desierto y un legado histórico milenario',
-      description: 'Jordania combina aventura en el desierto con sitios arqueológicos únicos. Explore Petra, acampe en Wadi Rum y flote en el Mar Muerto en una travesía inolvidable.',
-      bestTime: 'Mar - May, Sep - Nov',
+      name: 'Norte da Europa & Báltico',
+      image: 'Fiordos noruegos con aguas tranquilas y montañas nevadas',
+      DestinoImg: '../Destinations/NortedaEuropa.jpg',
+      shortDescription: 'Explora castillos, fiordos y paisajes impresionantes al estilo nórdico',
+      description: 'Un crucero por el norte de Europa ofrece experiencias únicas: desde fiordos noruegos y castillos daneses hasta ciudades bálticas llenas de historia y encanto escandinavo.',
+      bestTime: 'May - Sep',
+      duration: '10-14 días',
+      rating: '4.9',
+      highlights: [
+        'Navegación entre fiordos noruegos',
+        'Ciudades medievales como Tallin y Riga',
+        'Exploración de Copenhague y Estocolmo',
+        'Auroras boreales en ciertas temporadas',
+        'Cultura vikinga y diseño escandinavo'
+      ]
+    },
+    {
+      name: 'Alaska',
+      image: 'Glaciares y montañas en un paisaje natural impresionante',
+      DestinoImg: '../Destinations/Alaska.jpg',
+      shortDescription: 'Un encuentro cercano con la naturaleza salvaje en su estado más puro',
+      description: 'Descubre la majestuosidad de Alaska con paisajes glaciares, avistamiento de fauna, pueblos remotos y una experiencia de conexión total con la naturaleza.',
+      bestTime: 'Jun - Ago',
       duration: '7-10 días',
+      rating: '4.8',
+      highlights: [
+        'Navegación entre glaciares activos',
+        'Avistamiento de ballenas y osos',
+        'Senderismo en bosques boreales',
+        'Excursiones en trineos',
+        'Exploración de pueblos como Juneau y Ketchikan'
+      ]
+    },
+    {
+      name: 'Galápagos',
+      image: 'Tortuga gigante en las Islas Galápagos, Ecuador',
+      DestinoImg: '../Destinations/Galapagos.webp',
+      shortDescription: 'Una experiencia ecológica única en uno de los ecosistemas más puros del planeta',
+      description: 'Las Islas Galápagos son un paraíso natural donde la vida salvaje no tiene miedo al ser humano. Ideal para amantes de la naturaleza y viajeros conscientes.',
+      bestTime: 'Ene - May',
+      duration: '7-10 días',
+      rating: '4.9',
+      highlights: [
+        'Avistamiento de tortugas gigantes y leones marinos',
+        'Snorkel con tiburones y rayas',
+        'Senderismo en islas volcánicas',
+        'Fotografía de fauna endémica',
+        'Guías expertos en ecología y conservación'
+      ]
+    },
+    {
+      name: 'Sudamérica',
+      image: 'Vista aérea de Río de Janeiro con el Cristo Redentor',
+      DestinoImg: '../Destinations/AmericadoSul.jpg',
+      shortDescription: 'Diversidad cultural, paisajes vibrantes y ciudades llenas de ritmo',
+      description: 'Desde las playas de Brasil hasta los glaciares de Chile, Sudamérica ofrece una mezcla única de naturaleza, música, gastronomía y herencia cultural fascinante.',
+      bestTime: 'Nov - Mar',
+      duration: '10-14 días',
       rating: '4.7',
       highlights: [
-        'Exploración de la ciudad perdida de Petra',
-        'Campamento en el desierto de Wadi Rum',
-        'Flotación en el Mar Muerto',
-        'Trekking en cañones espectaculares',
-        'Cultura beduina auténtica'
+        'Playas icónicas en Río y Búzios',
+        'Cultura andina en Perú y Bolivia',
+        'Gastronomía sudamericana variada',
+        'Exploración de ciudades como Buenos Aires y Santiago',
+        'Naturaleza salvaje en la Patagonia y Amazonas'
       ]
     }
   ],

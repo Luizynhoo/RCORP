@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Star, Users, Globe, Award } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import { Link } from 'react-router-dom';
@@ -13,11 +13,11 @@ const Home = () => {
   <Helmet>
     <title>Rcorp Travel - Viajes Exclusivos e Inolvidables</title>
     <meta name="description" content="Explora experiencias únicas con Rcorp Travel, una agencia de viajes premium especializada en destinos exclusivos alrededor del mundo." />
-    <link rel="canonical" href="https://homolog.rcorptravel.com/" />
+    <link rel="canonical" href="https://rcorptravel.com/" />
 
     <meta property="og:title" content="Rcorp Travel - Agencia de Viajes Premium" />
     <meta property="og:description" content="Transformamos tus sueños en viajes inolvidables. Conoce nuestras marcas especializadas." />
-    <meta property="og:url" content="https://homolog.rcorptravel.com/" />
+    <meta property="og:url" content="https://rcorptravel.com/" />
     <meta property="og:image" content="https://images.unsplash.com/photo-1604257601296-65d349c74773" />
     <meta property="og:type" content="website" />
 
@@ -26,7 +26,7 @@ const Home = () => {
         "@context": "https://schema.org",
         "@type": "TravelAgency",
         "name": "Rcorp Travel",
-        "url": "https://homolog.rcorptravel.com/",
+        "url": "https://rcorptravel.com/",
         "sameAs": [
           "https://www.facebook.com/rcorptravel",
           "https://www.instagram.com/rcorptravel"
@@ -39,6 +39,8 @@ const Home = () => {
   const { banners, brands } = infosHome;
   const [currentSlide, setCurrentSlide] = useState(0);
   const [visibleSlide, setVisibleSlide] = useState(0);
+  const [FormError, setFormError] = useState(null); 
+  const [formStatus, setFormStatus] = useState(null); 
   const { toast } = useToast();
 
   const nextSlide = () => {
@@ -49,18 +51,46 @@ const Home = () => {
     setCurrentSlide((prev) => (prev - 1 + banners.length) % banners.length);
   };
 
-  const handleCTA = () => {
-    toast({
-      title: "🚧 ¡Esta funcionalidad aún no ha sido implementada, pero no te preocupes! Puedes solicitarla en tu próximo mensaje. 🚀"
-    });
-  };
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisibleSlide(currentSlide);
     }, 800);
     return () => clearTimeout(timer);
-  }, [currentSlide])
+  }, [currentSlide]);
+
+   const handleSubmit = async (event) => {
+    event.preventDefault(); 
+    const form = event.target;
+    const formData = new FormData(form);
+    const email = formData.get('EMAIL');
+    const fname = formData.get('FNAME');
+
+    const mailchimpUrl =
+      'https://rcorptravel.us18.list-manage.com/subscribe/post-json?u=d0e5c22ffe5105e8d5b1bb001&id=706cc08afc&c=?';
+
+    try {
+      await fetch(
+        `${mailchimpUrl}&EMAIL=${encodeURIComponent(email)}&FNAME=${encodeURIComponent(fname)}`,
+        {
+          method: 'GET',
+          mode: 'no-cors', 
+        }
+      );
+      setFormStatus('success');
+      setFormError(null);
+      localStorage.setItem('popupSubscribed', 'true'); 
+      form.reset();
+      toast({
+        title: "¡Inscripción Confirmada!",
+        description: "Pronto recibirás notificaciones sobre nuestras ofertas.",
+        duration: 3000,
+      });
+    } catch (error) {
+      setFormStatus('error');
+      setFormError('Hubo un error al enviar el formulario. Por favor, intenta de nuevo.');
+      console.error('Form submission error:', error);
+    }
+  };
 
   return (
     <div className="min-h-screen">
@@ -74,11 +104,18 @@ const Home = () => {
             exit={{ opacity: 0, scale: 1.05 }}
             transition={{ duration: 1.0, ease: "easeInOut" }}
           >
-            <img
-              src={banners[currentSlide].imageURL}
-              alt={banners[currentSlide].title}
-              className="w-full h-full object-cover"
-            />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcSet={banners[currentSlide].mobileImageURL}
+              />
+              <img
+                src={banners[currentSlide].imageURL}
+                alt={banners[currentSlide].title}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </picture>
             <div className="absolute inset-0 bg-black/30" />
           </motion.div>
         </AnimatePresence>
@@ -99,13 +136,14 @@ const Home = () => {
               <p className="text-xl md:text-2xl mb-8 text-gray-200">
                 {banners[currentSlide].subtitle}
               </p>
-              <Button
-                size="lg"
-                className="bg-[#002D5F] hover:bg-[#033972] text-white px-8 py-4 text-lg rounded-full shadow-glow"
-                onClick={handleCTA}
-              >
-                Explorar Ahora
-              </Button>
+              <Link to={banners[currentSlide].link}>
+                <Button
+                  size="lg"
+                  className="bg-[#002D5F] hover:bg-[#033972] text-white px-8 py-4 text-lg rounded-full shadow-glow"
+                >
+                  Explorar Ahora
+                </Button>
+              </Link>
             </motion.div>
           </AnimatePresence>
         </div>
@@ -155,10 +193,11 @@ const Home = () => {
               viewport={{ once: true }}
             >
               En nuestra agencia, transformamos
-              sueños en experiencias únicas e inolvidables. Con más
-              de una década y media de trayectoria, somos el socio
-              ideal para descubrir destinos exclusivos alrededor del
-              mundo con un servicio totalmente personalizado.
+              sueños en experiencias únicas e inolvidables. Con casi
+              una década de trayectoria, somos el socio ideal para
+              descubrir destinos exclusivos alrededor del mundo con
+              un servicio totalmente personalizado.
+
             </motion.p>
           </div>
         </div>
@@ -211,6 +250,7 @@ const Home = () => {
                           src={brand.image}
                           alt={brand.name}
                           className={`${brand.height} mx-auto object-contain transition-all duration-300`}
+                          loading="lazy"
                         />
                       </div>
                       <p className="text-gray-600 text-center text-sm leading-snug">{brand.description}</p>
@@ -224,6 +264,88 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="home-forms">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="form-container"
+        >
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            Inscríbete para recibir nuestras ofertas
+          </motion.h2>
+
+          <motion.form
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            onSubmit={handleSubmit}
+            className="form-content"
+            noValidate
+          >
+            <motion.input
+              type="text"
+              name="FNAME"
+              placeholder="Nombre"
+              whileFocus={{ scale: 1.02 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.1 }}
+              className="form-input"
+              required
+            />
+
+            <motion.input
+              type="email"
+              name="EMAIL"
+              placeholder="Correo electrónico"
+              whileFocus={{ scale: 1.02 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.1 }}
+              className="form-input"
+              required
+            />
+
+            <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+              <input
+                type="text"
+                name="b_d0e5c22ffe5105e8d5b1bb001_706cc08afc"
+                tabIndex={-1}
+                defaultValue=""
+              />
+            </div>
+
+            <motion.label
+              className="checkbox-label"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.1 }}
+              required
+            >
+              <input type="checkbox" className="checkbox" required />
+              Acepto recibir novedades y ofertas de Rcorp Travel
+            </motion.label>
+
+            <motion.button
+              type="submit"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.1 }}
+              className="submit-button"
+            >
+              Enviar
+            </motion.button>
+          </motion.form>
+        </motion.div>
+      </section>
     </div>
   );
 };

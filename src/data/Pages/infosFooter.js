@@ -20,7 +20,7 @@ const brandsLogo = [
   { src: '/logo-amawaterways.png', match: 'AmaWaterways', height: 'h-5' },
   { src: '/logo-celebrity.png', match: 'Celebrity Cruises', height: 'h-8' },
   { src: '/logo-crystal.png', match: 'Crystal', height: 'h-5' },
-  { src: '/logo-msc.png', match: 'MSC Cruzeiros', height: 'h-11' },
+  { src: '/logo-msc.png', match: 'MSC Cruceros', height: 'h-11' },
   { src: '/logo-scenic.png', match: 'Scenic', height: 'h-7' },
   { src: '/logo-swan.png', match: 'Swan', height: 'h-8' },
   { src: '/logo-ritz-carlton.png', match: 'Ritz', height: 'h-16' },
@@ -40,28 +40,29 @@ export const infosFooter = {
 
   brands: brandsLinks,
 
-  contacts: [
-    { country: 'Brasil', phone: '+55 11 9999-9999', flag: 'flag-br' },
-    { country: 'Estados Unidos', phone: '+1 555 123-4567', flag: 'flag-us' },
-    { country: 'España', phone: '+34 912 345 678', flag: 'flag-es' },
-    { country: 'Francia', phone: '+33 1 23 45 67 89', flag: 'flag-fr' },
-    { country: 'Italia', phone: '+39 06 1234 5678', flag: 'flag-it' },
-    { country: 'Alemania', phone: '+49 30 12345678', flag: 'flag-de' }
-  ],
+contacts: [
+  { country: "Colômbia", phone: "+57 601 4898312", flag: "co" },
+  { country: "El Salvador", phone: "+503 2113 0398", flag: "sv" },
+  { country: "Panamá", phone: "+507 839 1861", flag: "pa" },
+  { country: "Peru", phone: "+51 1 7050804", flag: "pe" },
+  { country: "República Dominicana", phone: "+1 849 936 1380", flag: "do" }
+],
+
+
 
   socialLinks: [
-    {
-      icon: FaFacebookF,
-      href: 'https://www.facebook.com/RCorpTravel',
-      label: 'Facebook',
-      color: '#1877F2'
-    },
     {
       icon: FaInstagram,
       href: 'https://www.instagram.com/rcorptraveloficial/',
       label: 'Instagram',
       gradient:
         'radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%)'
+    },
+    {
+      icon: FaFacebookF,
+      href: 'https://www.facebook.com/RCorpTravel',
+      label: 'Facebook',
+      color: '#1877F2'
     },
     {
       icon: FaYoutube,
@@ -71,7 +72,7 @@ export const infosFooter = {
     },
     {
       icon: FaWhatsapp,
-      href: 'https://wa.me/5511950842678?text=Olá,%20gostaria%20de%20mais%20informações',
+      href: 'https://wa.me/5511950842678?text=¡Hola!,%Quisiera%20más%20mais%20información.',
       label: 'WhatsApp',
       color: '#25D366'
     }

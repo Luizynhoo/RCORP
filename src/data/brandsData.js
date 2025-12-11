@@ -10,7 +10,7 @@ const unorderedBrandsData  = {
   'amawaterways': AmaWaterways,
   'celebrity-cruises': CelebrityCruises,
   'crystal': Crystal,
-  'msc-cruzeiros': MSCCruzeiros,
+  'msc-cruceros': MSCCruzeiros,
   'scenic': Scenic,
   'swan-hellenic': SwanHellenic,
   'the-ritz-carlton-yacht-collection':RitzCarlton,

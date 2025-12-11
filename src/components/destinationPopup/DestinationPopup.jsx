@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { X, MapPin, Calendar, Users, Star, AlignCenter } from 'lucide-react';
 import { FaStar } from 'react-icons/fa'; 
@@ -62,7 +61,7 @@ const DestinationPopup = ({ destination, onClose }) => {
             <div className='detailItemStyle'>
               <Calendar size={20} color="#2563eb" />
               <div>
-                <div style={{ fontWeight: 600, fontSize: '14px' }}>Melhor Época</div>
+                <div style={{ fontWeight: 600, fontSize: '14px' }}>Mejor Época</div>
                 <div style={{ fontSize: '12px', color: '#6b7280' }}>{destination.bestTime}</div>
               </div>
             </div>
@@ -70,7 +69,7 @@ const DestinationPopup = ({ destination, onClose }) => {
             <div className='detailItemStyle'>
               <Users size={20} color="#2563eb" />
               <div>
-                <div style={{ fontWeight: 600, fontSize: '14px' }}>Duração</div>
+                <div style={{ fontWeight: 600, fontSize: '14px' }}>Duración</div>
                 <div style={{ fontSize: '12px', color: '#6b7280' }}>{destination.duration}</div>
               </div>
             </div>
@@ -78,7 +77,7 @@ const DestinationPopup = ({ destination, onClose }) => {
             <div className='detailItemStyle'>
               <Star size={20} color="#2563eb" />
               <div>
-                <div style={{ fontWeight: 600, fontSize: '14px' }}>Avaliação</div>
+                <div style={{ fontWeight: 600, fontSize: '14px' }}>Evaluación</div>
                 <div style={{ fontSize: '12px', color: '#6b7280' }}>{destination.rating}/5</div>
               </div>
             </div>
@@ -88,7 +87,7 @@ const DestinationPopup = ({ destination, onClose }) => {
         <div  style={{ display: 'flex', flexDirection:'column', height:['97%'] , justifyContent: 'space-between' }}>
           <h2 className='titleStyle'>
             <FaStar size={16} color="#fbbf24" />
-            Destaques do Destino
+            Destaques del Destino
           </h2>
           <ul style={{ padding: 0, listStyle: 'none' }}>
             {destination.highlights.map((highlight, index) => (
@@ -105,7 +104,7 @@ const DestinationPopup = ({ destination, onClose }) => {
             onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
             onClick={handleWhatsApp}
           >
-            Solicitar Orçamento
+            Solicitar Cotización
           </button>
         </div>
       </motion.div>

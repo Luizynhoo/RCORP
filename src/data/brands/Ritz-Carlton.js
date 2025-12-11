@@ -4,7 +4,7 @@ export const RitzCarlton = {
   name: 'The Ritz-Carlton Yacht Collection',
   description: 'Con un diseño elegante, servicio personalizado y rutas exclusivas, redefine el concepto de hospitalidad de alto nivel en el mundo náutico.',
   subtitles: 'Viva la excelencia y el lujo incomparable en cada travesía.',
-  subtitleBrands: 'Un viaje sin límites: La expresión sublime del lujo y la hospitalidad enalta mar.',
+  subtitleBrands: 'Un viaje sin límites: La expresión sublime del lujo y la hospitalidad en alta mar.',
   fullDescription: 'The Ritz-Carlton Yacht Collection extiende el célebre legado de hospitalidad de la marca Ritz-Carlton a los mares, marcando el inicio de una nueva era en los viajes de lujo a bordo de yates. Con un diseño excepcionalmente elegante y contemporáneo, nuestros yates son verdaderas obras de arte flotantes. Sin dudas redefinimos por completo el concepto de hospitalidad de alto nivel en el mundo náutico.',
   secondDescription: 'Con un equipo comprometido con la perfección, garantizamos que cada instante de su viaje sea una experiencia sin igual. Con nosotros, cada momento se convierte en un recuerdo inolvidable.',
   slug: name.toLowerCase().replace(/\s+/g, '-'),
@@ -16,68 +16,117 @@ export const RitzCarlton = {
   logoHeight: 'h-[75px]',
   expTitle:'Experiencias que Transforman',
   exp: 'Ofrecemos mucho más que simples viajes. Creamos experiencias transformadoras que lo conectan con culturas, paisajes y aventuras que permanecerán en su memoria para siempre.',
-  videoUrlone: 'https://www.youtube.com/embed/0c2ueuGfhVE',
-  videoUrltwo: 'https://www.youtube.com/embed/0c2ueuGfhVE',
+  videoUrlone: 'https://www.youtube.com/embed/Md2k_IlFkoI',
+  videoUrltwo: 'https://www.youtube.com/embed/eq0LWR3YBtw',
   features: [
     'Yates de lujo con suites espaciosas y terraza privada',
     'Servicio personalizado y discreto',
     'Gastronomía de clase mundial con chefs galardonados',
     'Spa, bienestar y programas de relajación en alta mar',
   ],
-  destinations: [
-    {
-      name: 'Kyoto',
-      image: 'Vista del río Kamogawa con arquitectura tradicional japonesa',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: ' La esencia de Japón, con una mirada contemporánea.',
-      description:
-        'Ubicado a orillas del río Kamogawa, The Ritz-Carlton, Kyoto ofrece una inmersión en la cultura japonesa con diseño inspirado en ryokans y servicios de lujo. Una fusión perfecta entre serenidad y sofisticación.',
-      bestTime: 'Mar - May, Oct - Nov',
-      duration: '4-6 días',
-      rating: '4.9',
-      highlights: [
-        'Ceremonia del té tradicional',
-        'Jardines japoneses privados',
-        'Alta cocina kaiseki',
-        'Visitas a templos históricos',
-        'Vistas a las montañas Higashiyama'
-      ]
-    },
-    {
-      name: 'Ginebra',
-      image: 'Vista del lago Léman con montañas y hotel Ritz al fondo',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'La elegancia suiza se encuentra con la serenidad del lago Lemán',
-      description:
-        'Con una ubicación privilegiada, The Ritz-Carlton Hotel de la Paix en Ginebra combina historia, arte y un servicio excepcional con vistas impresionantes a los Alpes y al lago.',
-      bestTime: 'May - Sep',
-      duration: '3-5 días',
-      rating: '4.8',
-      highlights: [
-        'Paseos en barco por el lago Léman',
-        'Degustación de chocolates suizos',
-        'Vistas al Mont Blanc',
-        'Exploración del casco antiguo de Ginebra',
-        'Museos y galerías reconocidas'
-      ]
-    },
-    {
-      name: 'Bali',
-      image: 'Villa privada del Ritz-Carlton en Ubud con piscina infinita',
-      DestinoImg: 'https://images.unsplash.com/photo-1595872018818-97555653a011',
-      shortDescription: 'Un escape espiritual, inmerso entre playas idílicas y selvas místicas.',
-      description:
-        'The Ritz-Carlton, Bali ofrece una experiencia de lujo serena con vistas al océano y cultura balinesa auténtica. Ideal para quienes buscan tranquilidad, belleza natural y servicio cálido.',
-      bestTime: 'May - Sep',
-      duration: '6-8 días',
-      rating: '4.9',
-      highlights: [
-        'Spa frente al mar con rituales balineses',
-        'Villas con piscinas privadas',
-        'Gastronomía asiática contemporánea',
-        'Clases de yoga al amanecer',
-        'Ceremonias culturales y ofrendas florales'
-      ]
-    }
-  ]
+ destinations: [
+  {
+    name: 'Caribe',
+    image: 'Playas tropicales privadas y arrecifes de coral en el Caribe',
+    DestinoImg: '../Destinations/Caribe.jpg',
+    shortDescription: 'Islas paradisíacas de arena blanca y aguas cristalinas.',
+    description: 'Descubra el Caribe a bordo de Evrima e Ilma entre diciembre y marzo, con puertos exclusivos como St. Barts y Bequia. Ofrecemos alta gastronomía, snorkel en bellos arrecifes y experiencias isleñas fascinantes. ',
+    bestTime: 'Dic - Mar',
+    duration: '5‑10 noches',
+    rating: '4.9',
+    highlights: [
+      'Playas privadas y arrecifes de coral',
+      'Escalas en islas como Bequia y St. Barts',
+      'Ambiente boutique en barcos luxuosos',
+      'Spa y wellness a bordo',
+      'Selección gastronómica de chefs reconocidos'
+    ]
+  },
+  {
+    name: 'Mediterráneo',
+    image: 'Villas costeras y puertos históricos en el Mediterráneo europeo',
+    DestinoImg: '../Destinations/Mediterraneo.webp',
+    shortDescription: 'Puertos culturales y vistas costeras desde Roma hasta Mónaco.',
+    description: 'Itinerarios de verano 2025 operados por Ilma, Luminara y Evrima visitando la Riviera Francesa, islas griegas, costa italiana y puertos como Cannes, Portofino, Santorini y Dubrovnik. Tours exclusivos en tierra y gastronomía de lujo.',
+    bestTime: 'Abr - Oct',
+    duration: '7‑10 noches',
+    rating: '4.9',
+    highlights: [
+      'Visita a Mónaco, Cannes y Porto Cervo',
+      'Islas como Santorini, Milos y Dubrovnik',
+      'Experiencias gastronómicas y tour de vinos',
+      'Excursiones en helicóptero o kayak en la Riviera',
+      'Alojamiento boutique y servicio ultra personalizado'
+    ]
+  },
+  {
+    name: 'Norte de Europa & Báltico',
+    image: 'Fiordos noruegos y ciudades medievales del Báltico',
+    DestinoImg: '../Destinations/NortedaEuropa.webp',
+    shortDescription: 'Castillos, fiordos y capitales escandinavas en viaje elegante.',
+    description: 'En verano 2025, Ilma opera rutas desde Oslo o Estocolmo hasta Reykjavík incluyendo Bergen, Trondheim y Tallin. Experiencias culturales únicas con más tiempo en puerto, excursiones privadas y encanto nórdico en cada escala.',
+    bestTime: 'Jul - Ago',
+    duration: '7‑10 noches',
+    rating: '4.9',
+    highlights: [
+      'Navegación por fiordos como Geirangerfjord',
+      'Capitales como Oslo, Helsinki y Tallin',
+      'Compras de ámbar báltico y arte local',
+      'Bienestar a bordo y spa Ritz‑Carlton',
+      'Excursiones culturales guiadas en cada ciudad'
+    ]
+  },
+  {
+    name: 'Alaska',
+    image: 'Glaciares imponentes y naturaleza virgen de Alaska',
+    DestinoImg: '../Destinations/Alaska.jpg',
+    shortDescription: 'Exploración salvaje con estilo y confort inigualables.',
+    description: 'Disponible en rutas ampliadas en verano 2026 y 2027 operadas por Luminara (y posiblemente Luminara también en 2025). Explore glaciares, auroras boreales, avistamiento de fauna y paisajes árticos con experiencias Ritz‑Carlton onboard y excursiones inmersivas.',
+    bestTime: 'Jun - Sep',
+    duration: '10‑14 noches',
+    rating: '5.0',
+    highlights: [
+      'Visitas a glaciares y bahías remotas',
+      'Avistamiento de vida salvaje (osos, ballenas)',
+      'Rutas en tren panorámico y excursiones terrestres',
+      'Spas y bienestar frente al océano',
+      'Servicio boutique en yate de lujo'
+    ]
+  },
+  {
+    name: 'Asia / Pacífico Sur',
+    image: 'Islas exóticas del Pacífico y paisajes tropicales asiáticos',
+    DestinoImg: '../Destinations/AsiaySudesteAsiatico.webp',
+    shortDescription: 'Aventura cultural en Asia y Paraíso en el Pacífico.',
+    description: 'Desde diciembre 2025 Luminara realizará cruceros en Asia‑Pacífico, explorando Filipinas, Indonesia, Japón, Vietnam y Polinesia. Incluye itinerarios que combinan ciudades vibrantes con islas remotas como Komodo, Gili y Bora Bora.',
+    bestTime: 'Dic 2025 - Mar 2026',
+    duration: '7‑14 noches',
+    rating: '5.0',
+    highlights: [
+      'Templos de Bali y jardines de Komodo',
+      'Playas de arena blanca en Polinesia y Filipinas',
+      'Gastronomía y cultura local en cada escala',
+      'Kayak, buceo y experiencias en comunidad',
+      'Itinerarios boutique en barcos ultra‑lujosos'
+    ]
+  },
+  {
+    name: 'Grand Voyages / Travessías oceánicas',
+    image: 'Mapa global con rutas transcontinentales y escala exóticas',
+    DestinoImg: '../Destinations/NortedaEuropa.jpg',
+    shortDescription: 'Viajes épicos cruzando océanos desde Europa hasta Asia o América.',
+    description: 'Los Grand Voyages de Ritz-Carlton Yacht Collection incluyen destinos de Roma a Montecarlo a través del Mediterráneo, y ciudades del Norte de Europa. Además, cuenta con itinerarios globales que conectan África, Asia, Europa y América en viajes de más de 40 noches',
+    bestTime: 'Mar - Sep',
+    duration: '30‑52 noches',
+    rating: '5.0',
+    highlights: [
+      'Rutas como Roma–Montecarlo–Barcelona y Estocolmo–Reykjavík',
+      'Escalas en regiones exóticas como Seychelles o India',
+      'Experiencias culturales profundas y excursiones premium',
+      'Servicio Ritz‑Carlton a bordo con suite ultra espaciosa',
+      'Viajes diseñados para exploradores del mundo'
+    ]
+  }
+]
+
 };
